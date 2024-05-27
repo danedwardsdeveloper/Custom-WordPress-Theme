@@ -218,7 +218,9 @@
             </ul>
         </footer>
     </div>
-    <!-- <script type="module" src="./assets/js/main.js"></script> -->
+    <?php
+    wp_footer();
+    ?>
 </body>
 
 </html>
