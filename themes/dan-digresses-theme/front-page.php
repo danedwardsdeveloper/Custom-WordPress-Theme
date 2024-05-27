@@ -4,7 +4,13 @@
 <head>
     <title>Dan Digresses</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/main.v1.min.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/main.v1.min.css" /> -->
+
+    <?php
+    wp_head();
+    ?>
+
+
 </head>
 
 <body>
@@ -218,7 +224,7 @@
             </ul>
         </footer>
     </div>
-    <script type="module" src="./assets/js/main.js"></script>
+    <!-- <script type="module" src="./assets/js/main.js"></script> -->
 </body>
 
 </html>

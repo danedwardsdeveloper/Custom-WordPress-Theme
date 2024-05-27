@@ -7,3 +7,7 @@ Tags: preview cards, two-column, responsive
 Author: 
 Author URI: https://danedwardsdeveloper.com/
 */
+
+body {
+  background-color: lightblue;
+}
