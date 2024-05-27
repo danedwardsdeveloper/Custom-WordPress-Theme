@@ -4,13 +4,7 @@
 <head>
     <title>Dan Digresses</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="./assets/css/main.v1.min.css" /> -->
-
-    <?php
-    wp_head();
-    ?>
-
-
+    <?php wp_head(); ?>
 </head>
 
 <body>
