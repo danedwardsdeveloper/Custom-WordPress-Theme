@@ -14,7 +14,7 @@
                 <span class="brand-logo">Brand logo</span>
             </div>
             <div class="search-container">
-                <img src="./assets/images-icons/icons/google-search-icon.svg" alt="" id="search-icon" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/icons/google-search-icon.svg" alt="" id="search-icon" />
             </div>
         </header>
 
@@ -29,23 +29,23 @@
 
                 <div class="category-cards-container">
                     <div class="category-card">
-                        <img src="./assets/images-icons/images/category-graphics/graphic-1.webp" alt="Category 1" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/category-graphics/graphic-2.webp" alt="Category 1" />
                         <span>Category 1 </span>
                     </div>
                     <div class="category-card">
-                        <img src="./assets/images-icons/images/category-graphics/graphic-2.webp" alt="Category 2" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/category-graphics/graphic-2.webp" alt="Category 2" />
                         <span>Category 2 </span>
                     </div>
                     <div class="category-card">
-                        <img src="./assets/images-icons/images/category-graphics/graphic-3.webp" alt="Category 3" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/category-graphics/graphic-3.webp" alt="Category 3" />
                         <span>Category 3 </span>
                     </div>
                     <div class="category-card">
-                        <img src="./assets/images-icons/images/category-graphics/graphic-4.webp" alt="Category 4" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/category-graphics/graphic-4.webp" alt="Category 4" />
                         <span>Category 4 </span>
                     </div>
                     <div class="category-card">
-                        <img src="./assets/images-icons/images/category-graphics/graphic-5.webp" alt="Category 5" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/category-graphics/graphic-5.webp" alt="Category 5" />
                         <span>Category 5 </span>
                     </div>
                 </div>
@@ -56,14 +56,14 @@
                     <button id="sort-article-previews-btn">
                         <div>
                             <span>Most recent</span>
-                            <img src="./assets/images-icons/icons/google-chevron-right-icon.svg" alt="Expand icon" />
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/icons/google-chevron-right-icon.svg" alt="Expand icon" />
                         </div>
                     </button>
                     <div id="sort-article-previews-modal" class="hidden">
                         <ul>
                             <li>
                                 <span> Most recent </span>
-                                <img src="./assets/images-icons/icons/google-done-icon.svg" alt="" />
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/icons/google-done-icon.svg" alt="" />
                             </li>
                             <li>
                                 <span> Most viewed </span>
@@ -73,7 +73,7 @@
                 </div>
                 <div class="article-previews-container">
                     <div class="article-preview-card">
-                        <img src="./assets/images-icons/images/article-photo-1.webp" alt="" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/article-photo-1.webp" alt="" />
                         <span class="article-preview-title">Article preview title</span>
                         <span class="article-preview-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur laborum voluptatibus voluptatum...</span>
                         <div class="article-preview-card-footer">
@@ -84,7 +84,7 @@
                         </div>
                     </div>
                     <div class="article-preview-card">
-                        <img src="./assets/images-icons/images/article-photo-2.webp" alt="" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/article-photo-2.webp" alt="" />
                         <span class="article-preview-title">Article preview title</span>
                         <span class="article-preview-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur laborum voluptatibus voluptatum...</span>
                         <div class="article-preview-card-footer">
@@ -95,7 +95,7 @@
                         </div>
                     </div>
                     <div class="article-preview-card">
-                        <img src="./assets/images-icons/images/article-photo-3.webp" alt="" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/article-photo-3.webp" alt="" />
                         <span class="article-preview-title">Article preview title</span>
                         <span class="article-preview-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur laborum voluptatibus voluptatum...</span>
                         <div class="article-preview-card-footer">
@@ -106,7 +106,7 @@
                         </div>
                     </div>
                     <div class="article-preview-card">
-                        <img src="./assets/images-icons/images/article-photo-4.webp" alt="" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/article-photo-4.webp" alt="" />
                         <span class="article-preview-title">Article preview title</span>
                         <span class="article-preview-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur laborum voluptatibus voluptatum...</span>
                         <div class="article-preview-card-footer">
@@ -117,7 +117,7 @@
                         </div>
                     </div>
                     <div class="article-preview-card">
-                        <img src="./assets/images-icons/images/article-photo-5.webp" alt="" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/article-photo-5.webp" alt="" />
                         <span class="article-preview-title">Article preview title</span>
                         <span class="article-preview-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur laborum voluptatibus voluptatum...</span>
                         <div class="article-preview-card-footer">
@@ -128,7 +128,7 @@
                         </div>
                     </div>
                     <div class="article-preview-card">
-                        <img src="./assets/images-icons/images/article-photo-6.webp" alt="" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/article-photo-6.webp" alt="" />
                         <span class="article-preview-title">Article preview title</span>
                         <span class="article-preview-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur laborum voluptatibus voluptatum...</span>
                         <div class="article-preview-card-footer">
@@ -139,7 +139,7 @@
                         </div>
                     </div>
                     <div class="article-preview-card">
-                        <img src="./assets/images-icons/images/article-photo-7.webp" alt="" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/article-photo-7.webp" alt="" />
                         <span class="article-preview-title">Article preview title</span>
                         <span class="article-preview-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur laborum voluptatibus voluptatum...</span>
                         <div class="article-preview-card-footer">
@@ -150,7 +150,7 @@
                         </div>
                     </div>
                     <div class="article-preview-card">
-                        <img src="./assets/images-icons/images/article-photo-8.webp" alt="" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/article-photo-8.webp" alt="" />
                         <span class="article-preview-title">Article preview title</span>
                         <span class="article-preview-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur laborum voluptatibus voluptatum...</span>
                         <div class="article-preview-card-footer">
@@ -161,7 +161,7 @@
                         </div>
                     </div>
                     <div class="article-preview-card">
-                        <img src="./assets/images-icons/images/article-photo-9.webp" alt="" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/article-photo-9.webp" alt="" />
                         <span class="article-preview-title">Article preview title</span>
                         <span class="article-preview-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur laborum voluptatibus voluptatum...</span>
                         <div class="article-preview-card-footer">
@@ -172,7 +172,7 @@
                         </div>
                     </div>
                     <div class="article-preview-card">
-                        <img src="./assets/images-icons/images/article-photo-10.webp" alt="" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/article-photo-10.webp" alt="" />
                         <span class="article-preview-title">Article preview title</span>
                         <span class="article-preview-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur laborum voluptatibus voluptatum...</span>
                         <div class="article-preview-card-footer">
@@ -183,7 +183,7 @@
                         </div>
                     </div>
                     <div class="article-preview-card">
-                        <img src="./assets/images-icons/images/article-photo-11.webp" alt="" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/article-photo-11.webp" alt="" />
                         <span class="article-preview-title">Article preview title</span>
                         <span class="article-preview-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur laborum voluptatibus voluptatum...</span>
                         <div class="article-preview-card-footer">
@@ -194,7 +194,7 @@
                         </div>
                     </div>
                     <div class="article-preview-card">
-                        <img src="./assets/images-icons/images/article-photo-12.webp" alt="" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/article-photo-12.webp" alt="" />
                         <span class="article-preview-title">Article preview title</span>
                         <span class="article-preview-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur laborum voluptatibus voluptatum...</span>
                         <div class="article-preview-card-footer">

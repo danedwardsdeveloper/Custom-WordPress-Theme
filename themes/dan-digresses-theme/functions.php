@@ -3,15 +3,13 @@
 function dan_digresses_register_styles()
 {
     $version = wp_get_theme()->get('Version');
-
     wp_enqueue_style('danDigressesStyleSheet', get_stylesheet_directory_uri() . '/assets/css/style.min.css', array(), $version, "all");
 }
-
 add_action("wp_enqueue_scripts", "dan_digresses_register_styles");
 
 function dan_digresses_register_scripts()
 {
-    wp_enqueue_script("danDigressesMainJS", get_scrip);
+    $version = wp_get_theme()->get('Version');
+    wp_enqueue_script("danDigressesMainJS", get_template_directory_uri() . '/app/public/wp-content/themes/dan-digresses-theme/assets/js/main.js', array(), $version, "all");
 }
-
 add_action("wp_enqueue_scripts", "dan_digresses_register_scripts");
