@@ -34,6 +34,7 @@ get_header();
             </div>
         </div>
     </section>
+
     <section class="article-previews-section">
         <div class="article-preview-header">
             <h2>Recommended</h2>
@@ -56,138 +57,33 @@ get_header();
             </div>
         </div>
         <div class="article-previews-container">
-            <div class="article-preview-card">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/article-photo-1.webp" alt="" />
-                <span class="article-preview-title">Article preview title</span>
-                <span class="article-preview-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur laborum voluptatibus voluptatum...</span>
-                <div class="article-preview-card-footer">
-                    <div class="article-preview-tag">
-                        <span>Tag</span>
+            <?php
+            if (have_posts()) {
+                while (have_posts()) {
+                    the_post();
+            ?>
+                    <div class="article-preview-card">
+                        <?php
+                        $featured_image = get_the_post_thumbnail_url($post->ID, 'small');
+                        $featured_image_alt = get_post_meta(get_post_thumbnail_id($post->ID), '_wp_attachment_image_alt', true);
+                        ?>
+
+                        <?php if ($featured_image) : ?> <img src="<?php echo esc_url($featured_image); ?>" alt="<?php echo esc_attr($featured_image_alt); ?>">
+                        <?php endif; ?>
+                        <span class="article-preview-title"><?php the_title(); ?></span>
+
+                        <span class="article-preview-content"><?php the_excerpt(); ?></span>
+                        <div class="article-preview-card-footer">
+                            <div class="article-preview-tag">
+                                <span>Tag</span>
+                            </div>
+                            <span class="article-preview-date">03 March 2024</span>
+                        </div>
                     </div>
-                    <span class="article-preview-date">03 March 2024</span>
-                </div>
-            </div>
-            <div class="article-preview-card">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/article-photo-2.webp" alt="" />
-                <span class="article-preview-title">Article preview title</span>
-                <span class="article-preview-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur laborum voluptatibus voluptatum...</span>
-                <div class="article-preview-card-footer">
-                    <div class="article-preview-tag">
-                        <span>Tag</span>
-                    </div>
-                    <span class="article-preview-date">03 March 2024</span>
-                </div>
-            </div>
-            <div class="article-preview-card">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/article-photo-3.webp" alt="" />
-                <span class="article-preview-title">Article preview title</span>
-                <span class="article-preview-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur laborum voluptatibus voluptatum...</span>
-                <div class="article-preview-card-footer">
-                    <div class="article-preview-tag">
-                        <span>Tag</span>
-                    </div>
-                    <span class="article-preview-date">03 March 2024</span>
-                </div>
-            </div>
-            <div class="article-preview-card">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/article-photo-4.webp" alt="" />
-                <span class="article-preview-title">Article preview title</span>
-                <span class="article-preview-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur laborum voluptatibus voluptatum...</span>
-                <div class="article-preview-card-footer">
-                    <div class="article-preview-tag">
-                        <span>Tag</span>
-                    </div>
-                    <span class="article-preview-date">03 March 2024</span>
-                </div>
-            </div>
-            <div class="article-preview-card">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/article-photo-5.webp" alt="" />
-                <span class="article-preview-title">Article preview title</span>
-                <span class="article-preview-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur laborum voluptatibus voluptatum...</span>
-                <div class="article-preview-card-footer">
-                    <div class="article-preview-tag">
-                        <span>Tag</span>
-                    </div>
-                    <span class="article-preview-date">03 March 2024</span>
-                </div>
-            </div>
-            <div class="article-preview-card">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/article-photo-6.webp" alt="" />
-                <span class="article-preview-title">Article preview title</span>
-                <span class="article-preview-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur laborum voluptatibus voluptatum...</span>
-                <div class="article-preview-card-footer">
-                    <div class="article-preview-tag">
-                        <span>Tag</span>
-                    </div>
-                    <span class="article-preview-date">03 March 2024</span>
-                </div>
-            </div>
-            <div class="article-preview-card">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/article-photo-7.webp" alt="" />
-                <span class="article-preview-title">Article preview title</span>
-                <span class="article-preview-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur laborum voluptatibus voluptatum...</span>
-                <div class="article-preview-card-footer">
-                    <div class="article-preview-tag">
-                        <span>Tag</span>
-                    </div>
-                    <span class="article-preview-date">03 March 2024</span>
-                </div>
-            </div>
-            <div class="article-preview-card">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/article-photo-8.webp" alt="" />
-                <span class="article-preview-title">Article preview title</span>
-                <span class="article-preview-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur laborum voluptatibus voluptatum...</span>
-                <div class="article-preview-card-footer">
-                    <div class="article-preview-tag">
-                        <span>Tag</span>
-                    </div>
-                    <span class="article-preview-date">03 March 2024</span>
-                </div>
-            </div>
-            <div class="article-preview-card">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/article-photo-9.webp" alt="" />
-                <span class="article-preview-title">Article preview title</span>
-                <span class="article-preview-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur laborum voluptatibus voluptatum...</span>
-                <div class="article-preview-card-footer">
-                    <div class="article-preview-tag">
-                        <span>Tag</span>
-                    </div>
-                    <span class="article-preview-date">03 March 2024</span>
-                </div>
-            </div>
-            <div class="article-preview-card">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/article-photo-10.webp" alt="" />
-                <span class="article-preview-title">Article preview title</span>
-                <span class="article-preview-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur laborum voluptatibus voluptatum...</span>
-                <div class="article-preview-card-footer">
-                    <div class="article-preview-tag">
-                        <span>Tag</span>
-                    </div>
-                    <span class="article-preview-date">03 March 2024</span>
-                </div>
-            </div>
-            <div class="article-preview-card">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/article-photo-11.webp" alt="" />
-                <span class="article-preview-title">Article preview title</span>
-                <span class="article-preview-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur laborum voluptatibus voluptatum...</span>
-                <div class="article-preview-card-footer">
-                    <div class="article-preview-tag">
-                        <span>Tag</span>
-                    </div>
-                    <span class="article-preview-date">03 March 2024</span>
-                </div>
-            </div>
-            <div class="article-preview-card">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/article-photo-12.webp" alt="" />
-                <span class="article-preview-title">Article preview title</span>
-                <span class="article-preview-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur laborum voluptatibus voluptatum...</span>
-                <div class="article-preview-card-footer">
-                    <div class="article-preview-tag">
-                        <span>Tag</span>
-                    </div>
-                    <span class="article-preview-date">03 March 2024</span>
-                </div>
-            </div>
+            <?php
+                }
+            }
+            ?>
         </div>
     </section>
 </main>

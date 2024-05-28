@@ -29,3 +29,9 @@ function dan_digresses_register_scripts()
     wp_enqueue_script("danDigressesMainJS", get_template_directory_uri() . '/assets/js/main.js', array(), $version, true);
 }
 add_action("wp_enqueue_scripts", "dan_digresses_register_scripts");
+
+add_theme_support('post-thumbnails');
+
+add_filter('pre_site_transient_update_core', '__return_null');
+add_filter('pre_site_transient_update_themes', '__return_null');
+add_filter('pre_site_transient_update_plugins', '__return_null');

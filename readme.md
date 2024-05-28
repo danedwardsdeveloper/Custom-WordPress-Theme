@@ -17,6 +17,7 @@
 - [ ] Hardcode a category/search term page
 - [ ] Make the category/search term page page responsive
 - [ ] Implement pagination or endless scrolling
+- [ ] Delete unused WordPress style variables
 - [ ] ...many more steps
 
 ## Completed tasks
