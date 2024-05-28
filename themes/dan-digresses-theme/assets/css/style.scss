@@ -207,9 +207,9 @@ main {
     margin-top: 24px;
     gap: 24px;
     flex-wrap: wrap;
-    > * {
-      flex: 1;
-    }
+    // > * {
+    //   flex: 1;
+    // }
     .article-preview-card {
       box-sizing: border-box;
       width: 344px;
@@ -251,6 +251,7 @@ main {
         background-color: var(--background-darker);
         border-radius: 4px;
         align-items: center;
+        color: black;
         span {
           font-size: 1.4rem;
           font-weight: 500;

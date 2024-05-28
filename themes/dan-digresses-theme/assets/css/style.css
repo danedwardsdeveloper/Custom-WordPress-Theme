@@ -202,9 +202,6 @@ main {
   gap: 24px;
   flex-wrap: wrap;
 }
-.article-previews-section .article-previews-container > * {
-  flex: 1;
-}
 .article-previews-section .article-previews-container .article-preview-card {
   box-sizing: border-box;
   width: 344px;
@@ -246,6 +243,7 @@ main {
   background-color: var(--background-darker);
   border-radius: 4px;
   align-items: center;
+  color: black;
 }
 .article-previews-section .article-previews-container .article-preview-card-footer .article-preview-tag span {
   font-size: 1.4rem;

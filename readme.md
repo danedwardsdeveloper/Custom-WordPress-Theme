@@ -8,7 +8,9 @@
 
 ## To-Do List
 
-- [ ] Clone a hard-coded static version of a single-article page
+- [x] Fill out 6 blog posts
+- [ ] Truncate article previews
+- [ ] Turn article preview cards into links that actually work
 - [ ] Make the single-article page responsive
 - [ ] Improve modal
   - [ ] Modal positioning
@@ -22,5 +24,6 @@
 
 ## Completed tasks
 
+- [x] Clone a hard-coded static version of a single-article page
 - [x] Clone a hard-coded static version of the homepage
 - [x] Make the homepage responsive
