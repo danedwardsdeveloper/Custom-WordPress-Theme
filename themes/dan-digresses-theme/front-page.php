@@ -63,37 +63,38 @@ get_header();
                     the_post();
                     $permalink = get_permalink();
             ?>
-                    <a href="<?php echo $permalink; ?>">
-                        <div class="article-preview-card">
+                    <div class="article-preview-card">
 
-                            <?php
-                            $featured_image = get_the_post_thumbnail_url($post->ID, 'small');
-                            $featured_image_alt = get_post_meta(get_post_thumbnail_id($post->ID), '_wp_attachment_image_alt', true);
-                            ?>
+                        <?php
+                        $featured_image = get_the_post_thumbnail_url($post->ID, 'small');
+                        $featured_image_alt = get_post_meta(get_post_thumbnail_id($post->ID), '_wp_attachment_image_alt', true);
+                        ?>
 
-                            <?php if ($featured_image) : ?>
-                                <img src="<?php echo esc_url($featured_image); ?>" alt="<?php echo esc_attr($featured_image_alt); ?>">
-                            <?php endif; ?>
+                        <?php if ($featured_image) : ?>
+                            <img src="<?php echo esc_url($featured_image); ?>" alt="<?php echo esc_attr($featured_image_alt); ?>">
+                        <?php endif; ?>
+                        <span class="article-preview-title">
+                            <a href="<?php echo $permalink ?>">
+                                <?php the_title(); ?>
+                            </a>
+                        </span>
 
-                            <span class="article-preview-title"><?php the_title(); ?></span>
+                        <span class="article-preview-content"><?php echo get_excerpt(); ?></span>
 
-                            <span class="article-preview-content"><?php echo get_excerpt(); ?></span>
-
-                            <div class="article-preview-card-footer">
-                                <div class="article-preview-tag">
-                                    <?php
-                                    $tags = get_the_tags();
-                                    if ($tags) {
-                                        foreach ($tags as $tag) {
-                                            echo '<span>' . $tag->name . '</a></tag>';
-                                        }
+                        <div class="article-preview-card-footer">
+                            <div class="article-preview-tag">
+                                <?php
+                                $tags = get_the_tags();
+                                if ($tags) {
+                                    foreach ($tags as $tag) {
+                                        echo '<span>' . $tag->name . '</a></tag>';
                                     }
-                                    ?>
-                                </div>
-                                <span class="article-preview-date">03 March 2024</span>
+                                }
+                                ?>
                             </div>
+                            <span class="article-preview-date">03 March 2024</span>
                         </div>
-                    </a>
+                    </div>
             <?php
                 }
             }
