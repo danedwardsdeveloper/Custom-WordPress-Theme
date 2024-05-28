@@ -8,8 +8,6 @@
 
 ## To-Do List
 
-- [x] Fill out 6 blog posts
-- [ ] Truncate article previews
 - [ ] Turn article preview cards into links that actually work
 - [ ] Make the single-article page responsive
 - [ ] Improve modal
@@ -22,8 +20,17 @@
 - [ ] Delete unused WordPress style variables
 - [ ] ...many more steps
 
+### Annoying to-do list
+
+- [ ] Format article excerpts properly
+  - [ ] 100 characters long
+  - [ ] Use custom excerpt if available
+  - [ ] Add ellipsis only if necessary
+
 ## Completed tasks
 
+- [x] Truncate article previews
+- [x] Fill out 6 blog posts
 - [x] Clone a hard-coded static version of a single-article page
 - [x] Clone a hard-coded static version of the homepage
 - [x] Make the homepage responsive

@@ -38,7 +38,7 @@ function addArticlePreviewEventListeners() {
   });
 }
 
-addArticlePreviewEventListeners();
+// addArticlePreviewEventListeners();
 
 function handleHomeClicks() {
   const logo = document.querySelector(".brand-logo");

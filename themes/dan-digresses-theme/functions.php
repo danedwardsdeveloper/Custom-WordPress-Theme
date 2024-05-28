@@ -32,6 +32,16 @@ add_action("wp_enqueue_scripts", "dan_digresses_register_scripts");
 
 add_theme_support('post-thumbnails');
 
+function get_excerpt($count = 100)
+{
+    $excerpt = "content" ? get_the_excerpt() : get_the_content();
+    $excerpt = strip_tags($excerpt);
+    $excerpt = substr($excerpt, 0, strripos($excerpt, " "));
+    $excerpt = substr($excerpt, 0, $count);
+    $excerpt =  $excerpt . "...";
+    return $excerpt;
+}
+
 add_filter('pre_site_transient_update_core', '__return_null');
 add_filter('pre_site_transient_update_themes', '__return_null');
 add_filter('pre_site_transient_update_plugins', '__return_null');

@@ -75,7 +75,7 @@ get_header();
 
                         <span class="article-preview-title"><?php the_title(); ?></span>
 
-                        <span class="article-preview-content"><?php the_excerpt(); ?></span>
+                        <span class="article-preview-content"><?php echo get_excerpt(); ?></span>
 
                         <div class="article-preview-card-footer">
                             <div class="article-preview-tag">
