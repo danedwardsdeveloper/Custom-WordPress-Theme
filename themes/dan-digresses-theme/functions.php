@@ -6,6 +6,16 @@ function dan_digresses_theme_support()
 }
 add_action('after_setup_theme', 'dan_digresses_theme_support');
 
+function dan_digresses_menus()
+{
+    $locations = array(
+        "primary" => "desktop primary menu",
+        "footer" => "footer menu"
+    );
+    register_nav_menus($locations);
+}
+add_action("init", "dan_digresses_menus");
+
 function dan_digresses_register_styles()
 {
     $version = wp_get_theme()->get('Version');
