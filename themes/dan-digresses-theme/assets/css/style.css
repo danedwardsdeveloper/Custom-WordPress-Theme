@@ -261,8 +261,53 @@ main {
 .column-layout aside {
   width: 20%;
 }
-.column-layout .full-article {
+
+.full-article {
   width: 50%;
+}
+.full-article .article-header {
+  padding-top: 24px;
+  color: var(--dark-3);
+}
+.full-article .article-header h1 {
+  font-size: 56px;
+  font-weight: 700;
+  margin: 36px 0 0 0;
+  color: black;
+}
+
+aside.recent-articles {
+  position: sticky;
+  top: 0;
+  height: -moz-min-content;
+  height: min-content;
+}
+aside.recent-articles ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 70px 0 0 40px;
+}
+aside.recent-articles ul li {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 0;
+}
+
+nav.breadcrumbs ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav.breadcrumbs ul li {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 8px;
+}
+nav.breadcrumbs ul li:not(:last-child)::after {
+  content: ">";
+  color: var(--dark-3);
+  padding-left: 16px;
 }
 
 footer {
