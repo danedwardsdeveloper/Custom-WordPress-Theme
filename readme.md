@@ -34,3 +34,8 @@
 - [x] Clone a hard-coded static version of a single-article page
 - [x] Clone a hard-coded static version of the homepage
 - [x] Make the homepage responsive
+
+### Image sizes
+
+- Thumbnail **320x180**
+- Medium **540 × 360**
