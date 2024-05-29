@@ -2,6 +2,9 @@
 
 <main>
 
+  <h1 class="archive-title"><?php single_cat_title(); ?></h1>
+
+
   <?php if (have_posts()) : ?>
 
     <header class="archive-header">

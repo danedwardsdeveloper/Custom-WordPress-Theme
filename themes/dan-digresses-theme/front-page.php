@@ -12,29 +12,45 @@ get_header();
         <h2>Categories</h2>
         <div class="category-cards-container">
             <a href="<?php
-                        echo get_category_link('5');
+                        echo get_category_link('16');
                         ?>">
                 <div class="category-card">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/category-graphics/coffee.webp" alt="Delicious coffee" />
-                    <span>Coffee</span>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/category-graphics/books.webp" alt="A colourful bookshelf" />
+                    <span>Book reviews</span>
                 </div>
             </a>
-            <div class="category-card">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/category-graphics/graphic-2.webp" alt="Category 2" />
-                <span>Category 2 </span>
-            </div>
-            <div class="category-card">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/category-graphics/graphic-3.webp" alt="Category 3" />
-                <span>Category 3 </span>
-            </div>
-            <div class="category-card">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/category-graphics/graphic-4.webp" alt="Category 4" />
-                <span>Category 4 </span>
-            </div>
-            <div class="category-card">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/category-graphics/graphic-5.webp" alt="Category 5" />
-                <span>Category 5 </span>
-            </div>
+            <a href="<?php
+                        echo get_category_link('15');
+                        ?>">
+                <div class="category-card">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/category-graphics/philosophy.webp" alt="A wise owl, often used to represent knowledge and philosophy" />
+                    <span>Philosophy</span>
+                </div>
+            </a>
+            <a href="<?php
+                        echo get_category_link('13');
+                        ?>">
+                <div class="category-card">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/category-graphics/recipes.webp" alt="Two people cooking in a kitchen" />
+                    <span>Recipes</span>
+                    </>
+                </div>
+                <a href="<?php
+                            echo get_category_link('17');
+                            ?>">
+                    <div class="category-card">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/category-graphics/music.webp" alt="A music producer using a digital audio workstation" />
+                        <span>Music</span>
+                    </div>
+                </a>
+                <a href="<?php
+                            echo get_category_link('14');
+                            ?>">
+                    <div class="category-card">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/category-graphics/life-hacks.webp" alt="A collection of DIY materials and tools" />
+                        <span>Life hacks</span>
+                    </div>
+                </a>
         </div>
     </section>
 

@@ -6,9 +6,12 @@
 - WordPress
 - SASS
 
+# Current task
+
+- [ ] Generate an article in each primary category
+
 ## To-Do List
 
-- [ ] Change the category images
 - [ ] Change SASS to LESS
 - [ ] Truncate article titles on article previews
 - [ ] Screenshot of homepage
@@ -38,6 +41,7 @@
 
 ## Completed tasks
 
+- [x] Change the category images & links
 - [x] Make a nice favicon
 - [x] Truncate article previews
 - [x] Fill out 6 blog posts
