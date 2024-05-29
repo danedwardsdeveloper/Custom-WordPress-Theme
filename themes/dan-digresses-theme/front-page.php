@@ -66,11 +66,11 @@ get_header();
             <div id="sort-article-previews-modal" class="hidden">
                 <ul>
                     <li>
-                        <span> Most recent </span>
+                        <span>Most recent</span>
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/icons/google-done-icon.svg" alt="" />
                     </li>
                     <li>
-                        <span> Most viewed </span>
+                        <span>Most viewed</span>
                     </li>
                 </ul>
             </div>
@@ -109,7 +109,12 @@ get_header();
                                 }
                                 ?>
                             </div>
-                            <span class="article-preview-date">03 March 2024</span>
+                            <span class="article-preview-date">
+                                <?php
+                                $formatted_date = get_the_date('l j F Y');
+                                echo $formatted_date;
+                                ?>
+                            </span>
                         </div>
                     </div>
             <?php

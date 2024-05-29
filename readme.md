@@ -8,10 +8,15 @@
 
 # Current task
 
-- [ ] Generate an article in each primary category
+- [ ] Style single-article page
 
 ## To-Do List
 
+- [ ] Ensure that additional photos can be added to single articles without display problems
+- [ ] Make sure the number of articles displayed stays the same regardless of whether any are pinned to the top or not
+- [ ] SEO and metadata
+- [ ] Fix column gap on mobile view
+- [ ] Design a logo: 118 x 42px
 - [ ] Change SASS to LESS
 - [ ] Truncate article titles on article previews
 - [ ] Screenshot of homepage
@@ -48,6 +53,8 @@
 - [x] Clone a hard-coded static version of a single-article page
 - [x] Clone a hard-coded static version of the homepage
 - [x] Make the homepage responsive
+- [x] Display article dates on homepage dynamically
+- [x] Format date: `Monday 5 November 2024`
 
 ### Image sizes
 
