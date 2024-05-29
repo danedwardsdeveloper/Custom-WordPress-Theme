@@ -8,8 +8,9 @@
 
 ## To-Do List
 
-- [ ] Make a logo
 - [ ] Change the category images
+- [ ] Change SASS to LESS
+- [ ] Truncate article titles on article previews
 - [ ] Screenshot of homepage
 - [ ] Make GitHub public
 - [ ] Add to CV site

@@ -2,14 +2,14 @@
 
 <main>
 
-  <?php if ( have_posts() ) : ?>
+  <?php if (have_posts()) : ?>
 
     <header class="archive-header">
       <h1 class="archive-title"><?php single_cat_title(); ?></h1>
-      <?php the_archive_description( '<div class="archive-description">', '</div>' ); ?>
+      <?php the_archive_description('<div class="archive-description">', '</div>'); ?>
     </header>
 
-    <?php while ( have_posts() ) : the_post(); ?>
+    <?php while (have_posts()) : the_post(); ?>
 
       <article <?php post_class(); ?>>
 
@@ -33,7 +33,7 @@
 
   <?php else : ?>
 
-    <p><?php _e( 'There are no posts in this category.', 'your-theme-name' ); ?></p>
+    <p><?php _e('There are no posts in this category.', 'your-theme-name'); ?></p>
 
   <?php endif; ?>
 

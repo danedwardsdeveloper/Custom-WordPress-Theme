@@ -67,7 +67,6 @@ get_header();
                     $permalink = get_permalink();
             ?>
                     <div class="article-preview-card">
-
                         <?php
                         $featured_image = get_the_post_thumbnail_url($post->ID, 'small');
                         $featured_image_alt = get_post_meta(get_post_thumbnail_id($post->ID), '_wp_attachment_image_alt', true);
@@ -89,9 +88,8 @@ get_header();
                                 <?php
                                 $tags = get_the_tags();
                                 if ($tags) {
-                                    foreach ($tags as $tag) {
-                                        echo '<span>' . $tag->name . '</a></tag>';
-                                    }
+                                    $first_tag = reset($tags);
+                                    echo '<span><a href="' . get_tag_link($first_tag->term_id) . '">' . $first_tag->name . '</a></span>';
                                 }
                                 ?>
                             </div>
