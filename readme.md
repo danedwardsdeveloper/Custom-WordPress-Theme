@@ -8,6 +8,14 @@
 
 ## To-Do List
 
+- [ ] Make a logo
+- [ ] Change the category images
+- [ ] Screenshot of homepage
+- [ ] Make GitHub public
+- [ ] Add to CV site
+- [ ] Use AI to generate lots of example articles from different categories
+- [ ] Set up category page links
+- [ ] Style the category page
 - [ ] Turn article preview cards into links that actually work
 - [ ] Make the single-article page responsive
 - [ ] Improve modal
@@ -29,6 +37,7 @@
 
 ## Completed tasks
 
+- [x] Make a nice favicon
 - [x] Truncate article previews
 - [x] Fill out 6 blog posts
 - [x] Clone a hard-coded static version of a single-article page
