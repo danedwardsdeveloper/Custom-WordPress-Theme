@@ -1,6 +1,7 @@
 @mixin convert-svg-to-grey {
   filter: invert(38%) sepia(0%) saturate(1064%) hue-rotate(251deg) brightness(101%) contrast(77%);
 }
+
 $phone: 600px;
 $tablet: 840px;
 
@@ -28,9 +29,6 @@ span {
 a {
   text-decoration: none;
   color: inherit;
-  &:hover {
-    text-decoration: underline;
-  }
   &:visited,
   &:active {
     color: inherit;
@@ -116,7 +114,7 @@ main {
       height: 240px;
       background-color: rgb(255, 255, 255);
       border-radius: 12px;
-      // margin-bottom: 30rem;
+      cursor: pointer;
       img {
         width: 196px;
         height: 120px;

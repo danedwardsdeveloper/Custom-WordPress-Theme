@@ -10,12 +10,15 @@ get_header();
 
     <section class="categories">
         <h2>Categories</h2>
-
         <div class="category-cards-container">
-            <div class="category-card">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/category-graphics/graphic-2.webp" alt="Category 1" />
-                <span>Category 1 </span>
-            </div>
+            <a href="<?php
+                        echo get_category_link('5');
+                        ?>">
+                <div class="category-card">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/category-graphics/coffee.webp" alt="Delicious coffee" />
+                    <span>Coffee</span>
+                </div>
+            </a>
             <div class="category-card">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/category-graphics/graphic-2.webp" alt="Category 2" />
                 <span>Category 2 </span>

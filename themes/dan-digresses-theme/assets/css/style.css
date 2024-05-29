@@ -23,9 +23,6 @@ a {
   text-decoration: none;
   color: inherit;
 }
-a:hover {
-  text-decoration: underline;
-}
 a:visited, a:active {
   color: inherit;
 }
@@ -113,6 +110,7 @@ main {
   height: 240px;
   background-color: rgb(255, 255, 255);
   border-radius: 12px;
+  cursor: pointer;
 }
 .categories .category-cards-container .category-card img {
   width: 196px;
