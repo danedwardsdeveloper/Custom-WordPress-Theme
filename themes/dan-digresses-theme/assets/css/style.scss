@@ -7,6 +7,7 @@ $tablet: 840px;
 
 :root {
   font-size: 10px;
+  line-height: 1.5;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   box-sizing: border-box;
   --background-main: rgb(248, 248, 248);
@@ -245,22 +246,27 @@ main {
       padding: 0 8px 6px 8px;
       display: flex;
       justify-content: space-between;
-      .article-preview-tag {
-        padding: 2px 6px;
-        background-color: var(--background-darker);
-        border-radius: 4px;
-        align-items: center;
-        color: black;
-        span {
-          font-size: 1.4rem;
-          font-weight: 500;
-        }
-      }
       .article-preview-date {
         color: var(--dark-3);
         font-size: 1.4rem;
       }
     }
+  }
+}
+
+.tag {
+  display: inline-block;
+  padding: 2px 6px;
+  background-color: var(--background-darker);
+  border-radius: 4px;
+  align-items: center;
+  color: black;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+  span {
+    font-size: 1.4rem;
+    font-weight: 500;
   }
 }
 
@@ -281,6 +287,61 @@ main {
       font-weight: 700;
       margin: 36px 0 0 0;
       color: black;
+    }
+    div.writer-date {
+      display: flex;
+      justify-content: space-between;
+      span {
+        padding-top: 24px;
+        font-size: 2rem;
+        color: var(--dark-3);
+      }
+    }
+    div.tags-container {
+      padding-top: 12px;
+    }
+    div.image-container {
+      margin: 24px 0 12px 0;
+      img {
+        height: 190px;
+        width: 100%;
+        border-radius: 12px;
+        object-fit: cover;
+        display: block;
+      }
+    }
+  }
+}
+
+.article-content {
+  h2,
+  h3,
+  h4 {
+    font-weight: 600;
+  }
+  h2 {
+    font-size: 3.2rem;
+    margin: 36px 0 18px 0;
+  }
+  h3 {
+    font-size: 2.4rem;
+    margin: 24px 0 12px 0;
+  }
+  h4 {
+    font-size: 1.8rem;
+    margin: 18px 0 4px 0;
+  }
+  p {
+    margin: 0 0 12px 0;
+    font-size: 1.8rem;
+    line-height: 1.625;
+  }
+  figure {
+    text-align: center;
+    img {
+      max-width: 350px;
+      border-radius: 12px;
+      object-fit: cover;
     }
   }
 }

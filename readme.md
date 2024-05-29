@@ -12,6 +12,7 @@
 
 ## To-Do List
 
+- [ ] Make breadcrumbs dynamic
 - [ ] Ensure that additional photos can be added to single articles without display problems
 - [ ] Make sure the number of articles displayed stays the same regardless of whether any are pinned to the top or not
 - [ ] SEO and metadata

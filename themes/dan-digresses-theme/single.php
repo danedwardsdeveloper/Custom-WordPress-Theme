@@ -3,16 +3,8 @@
 <main>
     <div class="column-layout">
 
-        <aside class="recent-articles">
-            <ul>
-                <li>Article 1</li>
-                <li>Article 2</li>
-                <li>Article 3</li>
-                <li>Article 4</li>
-                <li>Article 5</li>
-                <li>Article 6</li>
-            </ul>
-        </aside>
+        <?php get_sidebar(); ?>
+
         <article class="full-article">
             <nav class="breadcrumbs">
                 <ul>
@@ -29,6 +21,30 @@
                         $content = get_the_content();
                 ?>
                         <h1><?php echo $title; ?></h1>
+
+                        <div class="writer-date">
+                            <span>by <?php the_author(); ?></span>
+                            <span><?php echo get_the_date('l j F Y') ?></span>
+                        </div>
+                        <div class="tags-container">
+                            <div class="tag">
+                                <span>Tag</span>
+                            </div>
+                            <div class="tag">
+                                <span>Another tag</span>
+                            </div>
+                            <div class="tag">
+                                <span>Different tag</span>
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <?php
+                            $id = get_post_thumbnail_id($post->ID);
+                            $src = get_the_post_thumbnail_url(get_the_ID(), 'full');
+                            $alt = get_post_meta($id, '_wp_attachment_image_alt', true);
+                            ?>
+                            <img src="<?php echo $src; ?>" alt="<?php echo $alt ?>">
+                        </div>
             </section>
 
             <div class="article-content">
@@ -44,30 +60,8 @@
                 // Reset the Post Data
                 wp_reset_postdata();
     ?>
-
-
-
-    <div>
-        <div class="tags-container">
-            <div class="tag">
-                <span>Tag</span>
-            </div>
-            <div class="tag">
-                <span>Another tag</span>
-            </div>
-            <div class="tag">
-                <span>Different tag</span>
-            </div>
-        </div>
-        <span class="article-date">Monday 27 May 2024</span>
-    </div>
-    <div class="image-container">
-        <img src="./assets/images-icons/images/article-photo-1.webp" alt="" />
-    </div>
     </section>
     </div>
 </main>
-
-
 
 <?php get_footer(); ?>

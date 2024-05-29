@@ -100,7 +100,7 @@ get_header();
                         <span class="article-preview-content"><?php echo get_excerpt(); ?></span>
 
                         <div class="article-preview-card-footer">
-                            <div class="article-preview-tag">
+                            <div class="tag">
                                 <?php
                                 $tags = get_the_tags();
                                 if ($tags) {
