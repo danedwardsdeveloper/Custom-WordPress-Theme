@@ -1,5 +1,5 @@
 <footer>
-    <span>&copy; 2024 Company Name</span>
+    <span>&copy; 2024 Dan Digresses</span>
     <ul>
         <li>
             <a href="" target="_blank">Terms of service</a>

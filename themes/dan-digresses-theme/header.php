@@ -10,7 +10,7 @@
     <div id="root">
         <header class="header">
             <div class="brand-logo-container">
-                <span class="brand-logo">Brand logo</span>
+                <span class="brand-logo">Dan Digresses</span>
             </div>
             <div class="search-container">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/icons/google-search-icon.svg" alt="" id="search-icon" />
