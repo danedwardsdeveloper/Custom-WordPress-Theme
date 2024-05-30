@@ -13,8 +13,8 @@
                             Home
                         </a>
                     </li>
-                    <li>Articles</li>
-                    <li>Category</li>
+                    <li><?php the_category('single=true&echo=false') ?></li>
+                    <li><?php the_title() ?></li>
                 </ul>
             </nav>
             <section class="article-header">
