@@ -201,6 +201,12 @@ main {
   margin-top: 24px;
   gap: 24px;
   flex-wrap: wrap;
+  justify-content: flex-start;
+}
+@media screen and (max-width: 600px) {
+  .article-previews-section .article-previews-container {
+    justify-content: center;
+  }
 }
 .article-previews-section .article-previews-container a div.article-preview-card {
   box-sizing: border-box;

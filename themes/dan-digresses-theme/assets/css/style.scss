@@ -207,9 +207,10 @@ main {
     margin-top: 24px;
     gap: 24px;
     flex-wrap: wrap;
-    // > * {
-    //   flex: 1;
-    // }
+    justify-content: flex-start;
+    @media screen and (max-width: $phone) {
+      justify-content: center;
+    }
     a div.article-preview-card {
       box-sizing: border-box;
       width: 344px;

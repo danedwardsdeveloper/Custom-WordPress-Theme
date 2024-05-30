@@ -10,22 +10,16 @@
 
 ## To-Do List
 
-- [ ] Resize Carly Rae Jepsen photo
-- [ ] Make tag links on article previews work
 - [ ] Implement pagination
 - [ ] Style category pages
 - [ ] Make breadcrumbs dynamic
-- [ ] Ensure that additional photos can be added to single articles without display problems
-- [ ] Make sure the number of articles displayed stays the same regardless of whether any are pinned to the top or not
 - [ ] SEO and metadata
-- [ ] Fix column gap on mobile view
 - [ ] Design a logo: 118 x 42px
 - [ ] Change SASS to LESS
 - [ ] Truncate article titles on article previews
 - [ ] Screenshot of homepage
 - [ ] Make GitHub public
 - [ ] Add to CV site
-- [ ] Use AI to generate lots of example articles from different categories
 - [ ] Make the single-article page responsive
 - [ ] Improve modal
   - [ ] Modal positioning
@@ -36,16 +30,13 @@
 - [ ] Delete unused WordPress style variables
 - [ ] ...many more steps
 
-### Annoying to-do list
-
-- [ ] Format article excerpts properly
-  - [ ] 100 characters long
-  - [ ] Use custom excerpt if available
-  - [ ] Add ellipsis only if necessary
-- [ ] Stop sticky posts from being displayed in addition to maximum posts per page
-
 ## Completed tasks
 
+- [x] Use AI to generate lots of example articles from different categories
+- [x] Ensure that additional photos can be added to single articles without display problems
+- [x] Fix column gap on mobile view
+- [x] Resize Carly Rae Jepsen photo
+- [x] Make tag links on article previews work
 - [x] Turn article preview cards into links that actually work
 - [x] Change the category images & links
 - [x] Make a nice favicon
@@ -57,6 +48,14 @@
 - [x] Display article dates on homepage dynamically
 - [x] Format date: `Monday 5 November 2024`
 - [x] Style single-article page
+
+### Annoying to-do list
+
+- [ ] Format article excerpts properly
+  - [ ] 100 characters long
+  - [ ] Use custom excerpt if available
+  - [ ] Add ellipsis only if necessary
+- [ ] Stop sticky posts from being displayed in addition to maximum posts per page
 
 ### Image sizes
 
