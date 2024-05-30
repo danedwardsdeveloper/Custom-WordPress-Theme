@@ -8,10 +8,11 @@
 
 # Current task
 
-- [ ] Style single-article page
+- [ ] Implement pagination
 
 ## To-Do List
 
+- [ ] Style category pages
 - [ ] Make breadcrumbs dynamic
 - [ ] Ensure that additional photos can be added to single articles without display problems
 - [ ] Make sure the number of articles displayed stays the same regardless of whether any are pinned to the top or not
@@ -24,8 +25,6 @@
 - [ ] Make GitHub public
 - [ ] Add to CV site
 - [ ] Use AI to generate lots of example articles from different categories
-- [ ] Set up category page links
-- [ ] Style the category page
 - [ ] Turn article preview cards into links that actually work
 - [ ] Make the single-article page responsive
 - [ ] Improve modal
@@ -34,7 +33,6 @@
   - [ ] Animation
 - [ ] Hardcode a category/search term page
 - [ ] Make the category/search term page page responsive
-- [ ] Implement pagination or endless scrolling
 - [ ] Delete unused WordPress style variables
 - [ ] ...many more steps
 
@@ -44,6 +42,7 @@
   - [ ] 100 characters long
   - [ ] Use custom excerpt if available
   - [ ] Add ellipsis only if necessary
+- [ ] Stop sticky posts from being displayed in addition to maximum posts per page
 
 ## Completed tasks
 
@@ -56,6 +55,7 @@
 - [x] Make the homepage responsive
 - [x] Display article dates on homepage dynamically
 - [x] Format date: `Monday 5 November 2024`
+- [x] Style single-article page
 
 ### Image sizes
 
