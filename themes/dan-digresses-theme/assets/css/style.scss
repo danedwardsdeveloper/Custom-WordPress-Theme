@@ -210,10 +210,9 @@ main {
     // > * {
     //   flex: 1;
     // }
-    .article-preview-card {
+    a div.article-preview-card {
       box-sizing: border-box;
       width: 344px;
-      // height: 357px;
       cursor: pointer;
       padding: 12px;
       border-radius: 8px;

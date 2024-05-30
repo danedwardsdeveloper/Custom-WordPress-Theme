@@ -8,10 +8,11 @@
 
 # Current task
 
-- [ ] Implement pagination
-
 ## To-Do List
 
+- [ ] Resize Carly Rae Jepsen photo
+- [ ] Make tag links on article previews work
+- [ ] Implement pagination
 - [ ] Style category pages
 - [ ] Make breadcrumbs dynamic
 - [ ] Ensure that additional photos can be added to single articles without display problems
@@ -25,7 +26,6 @@
 - [ ] Make GitHub public
 - [ ] Add to CV site
 - [ ] Use AI to generate lots of example articles from different categories
-- [ ] Turn article preview cards into links that actually work
 - [ ] Make the single-article page responsive
 - [ ] Improve modal
   - [ ] Modal positioning
@@ -46,6 +46,7 @@
 
 ## Completed tasks
 
+- [x] Turn article preview cards into links that actually work
 - [x] Change the category images & links
 - [x] Make a nice favicon
 - [x] Truncate article previews

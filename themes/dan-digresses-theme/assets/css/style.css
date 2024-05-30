@@ -202,7 +202,7 @@ main {
   gap: 24px;
   flex-wrap: wrap;
 }
-.article-previews-section .article-previews-container .article-preview-card {
+.article-previews-section .article-previews-container a div.article-preview-card {
   box-sizing: border-box;
   width: 344px;
   cursor: pointer;
@@ -212,7 +212,7 @@ main {
   display: flex;
   flex-direction: column;
 }
-.article-previews-section .article-previews-container .article-preview-card img {
+.article-previews-section .article-previews-container a div.article-preview-card img {
   height: 180px;
   -o-object-fit: cover;
      object-fit: cover;
