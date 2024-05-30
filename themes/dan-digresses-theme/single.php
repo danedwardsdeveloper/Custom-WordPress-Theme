@@ -8,7 +8,11 @@
         <article class="full-article">
             <nav class="breadcrumbs">
                 <ul>
-                    <li>Home</li>
+                    <li>
+                        <a href="<?php echo home_url(); ?>">
+                            Home
+                        </a>
+                    </li>
                     <li>Articles</li>
                     <li>Category</li>
                 </ul>

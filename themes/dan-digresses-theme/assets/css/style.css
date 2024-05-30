@@ -365,14 +365,21 @@ nav.breadcrumbs ul {
 }
 nav.breadcrumbs ul li {
   display: inline-block;
+  padding: 8px;
   font-size: 18px;
   font-weight: 400;
-  padding: 8px;
 }
 nav.breadcrumbs ul li:not(:last-child)::after {
   content: ">";
   color: var(--dark-3);
   padding-left: 16px;
+}
+nav.breadcrumbs ul li a {
+  font-size: 18px;
+  font-weight: 400;
+}
+nav.breadcrumbs ul li a:hover {
+  color: var(--dark-3);
 }
 
 footer {

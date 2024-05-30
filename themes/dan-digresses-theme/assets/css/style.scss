@@ -369,13 +369,20 @@ nav.breadcrumbs {
     padding: 0;
     li {
       display: inline-block;
+      padding: 8px;
       font-size: 18px;
       font-weight: 400;
-      padding: 8px;
       &:not(:last-child)::after {
         content: ">";
         color: var(--dark-3);
         padding-left: 16px;
+      }
+      a {
+        font-size: 18px;
+        font-weight: 400;
+        &:hover {
+          color: var(--dark-3);
+        }
       }
     }
   }

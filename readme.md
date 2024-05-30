@@ -8,11 +8,12 @@
 
 # Current task
 
+- [ ] Make breadcrumbs dynamic
+
 ## To-Do List
 
-- [ ] Implement pagination
+- [ ] Fix single article mobile layout
 - [ ] Style category pages
-- [ ] Make breadcrumbs dynamic
 - [ ] SEO and metadata
 - [ ] Design a logo: 118 x 42px
 - [ ] Change SASS to LESS
@@ -27,7 +28,8 @@
   - [ ] Animation
 - [ ] Hardcode a category/search term page
 - [ ] Make the category/search term page page responsive
-- [ ] Delete unused WordPress style variables
+- [ ] Delete unused WordPress stylesheets
+- [ ] Implement pagination
 - [ ] ...many more steps
 
 ## Completed tasks

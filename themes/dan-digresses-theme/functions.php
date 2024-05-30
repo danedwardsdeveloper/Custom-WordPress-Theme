@@ -3,7 +3,14 @@
 function dan_digresses_theme_support()
 {
     add_theme_support('title-tag');
+    add_theme_support('custom-logo', array(
+        'height'      => 78,
+        'width'       => 522,
+        'flex-width'  => true,
+        'flex-height' => true,
+    ));
 }
+
 add_action('after_setup_theme', 'dan_digresses_theme_support');
 
 function dan_digresses_menus()
