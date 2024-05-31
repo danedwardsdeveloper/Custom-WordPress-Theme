@@ -10,14 +10,12 @@
 
 # Current task
 
-- [ ] Change SASS to LESS
+- [ ] Truncate article titles on article previews & breadcrumbs
 
 ## To-Do List
 
 - [ ] Make H1 font-size smaller on smaller screens
-- [ ] Fix single article mobile layout
 - [ ] SEO and metadata
-- [ ] Truncate article titles on article previews
 - [ ] Screenshot of homepage
 - [ ] Make GitHub public
 - [ ] Add to CV site
@@ -55,6 +53,8 @@
 - [x] Display article dates on homepage dynamically
 - [x] Format date: `Monday 5 November 2024`
 - [x] Style single-article page
+- [x] Change SASS to LESS
+- [x] Fix single article mobile layout
 
 ### Annoying to-do list
 
