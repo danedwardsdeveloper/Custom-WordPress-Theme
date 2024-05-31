@@ -11,7 +11,9 @@
     <div id="root">
         <header class="header">
             <div class="brand-logo-container">
-                <?php the_custom_logo(); ?>
+                <a class="brand-logo" href="<?php echo home_url(); ?>">
+                    <span>D</span>an <span>D</span>igresses<span>...</span>
+                </a>
             </div>
             <div class="search-container">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/icons/google-search-icon.svg" alt="" id="search-icon" />

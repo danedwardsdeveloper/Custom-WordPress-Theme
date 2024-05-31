@@ -54,7 +54,10 @@ a {
   }
   .brand-logo {
     font-size: 3rem;
-    cursor: pointer;
+    span {
+      font-size: 3rem;
+      text-shadow: 0.15rem 0.15rem #ff3353fc, -0.15rem -0.15rem cyan;
+    }
   }
   .search-container {
     display: flex;
