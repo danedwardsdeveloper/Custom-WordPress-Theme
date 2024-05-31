@@ -1,9 +1,9 @@
-@mixin convert-svg-to-grey {
+.convert-svg-to-grey {
   filter: invert(38%) sepia(0%) saturate(1064%) hue-rotate(251deg) brightness(101%) contrast(77%);
 }
 
-$phone: 600px;
-$tablet: 840px;
+@phone: 600px;
+@tablet: 840px;
 
 :root {
   font-size: 10px;
@@ -46,7 +46,7 @@ a {
   display: flex;
   justify-content: space-between;
   padding: 14px 24px;
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: @tablet) {
     padding: 16px;
   }
   .brand-logo-container {
@@ -77,7 +77,7 @@ main {
   margin: 66px auto 0 auto;
   padding: 0 42px;
   max-width: 1080px;
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: @tablet) {
     padding: 0 16px;
   }
 }
@@ -168,7 +168,7 @@ main {
         }
         img {
           transform: rotate(90deg);
-          @include convert-svg-to-grey;
+          .convert-svg-to-grey();
         }
       }
     }
@@ -209,13 +209,13 @@ main {
     gap: 24px;
     flex-wrap: wrap;
     justify-content: flex-start;
-    @media screen and (max-width: $phone) {
+    @media screen and (max-width: @phone) {
       justify-content: center;
     }
     a div.article-preview-card {
       box-sizing: border-box;
       width: 344px;
-      @media screen and (max-width: $phone) {
+      @media screen and (max-width: @phone) {
         width: 100%;
       }
       cursor: pointer;
@@ -380,7 +380,7 @@ nav.breadcrumbs {
       width: 100%;
       height: 214px;
       gap: 24px;
-      @media screen and (max-width: $phone) {
+      @media screen and (max-width: @phone) {
         flex-direction: column;
         height: auto;
         gap: 0;
@@ -399,7 +399,7 @@ nav.breadcrumbs {
         }
         p {
           margin: 12px 0 24px 0;
-          @media screen and (max-width: $phone) {
+          @media screen and (max-width: @phone) {
             margin-bottom: 12px;
           }
         }
@@ -409,7 +409,7 @@ nav.breadcrumbs {
           height: 152px;
           width: 152px;
           margin-top: 12px;
-          @media screen and (max-width: $phone) {
+          @media screen and (max-width: @phone) {
             width: 100%;
             margin-bottom: 24px;
           }
