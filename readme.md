@@ -10,10 +10,11 @@
 
 # Current task
 
-- [ ] Truncate article titles on article previews & breadcrumbs
+- [ ] Generate recent/relevant article dynamically
 
 ## To-Do List
 
+- [ ] Truncate article titles on article previews & breadcrumbs
 - [ ] Make H1 font-size smaller on smaller screens
 - [ ] SEO and metadata
 - [ ] Screenshot of homepage
