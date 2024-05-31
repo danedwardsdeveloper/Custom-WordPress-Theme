@@ -9,7 +9,13 @@
           Home
         </a>
       </li>
-      <li><?php the_category('single=true&echo=false') ?></li>
+      <?php
+      $category = get_queried_object();
+
+      if ($category && $category->taxonomy === 'category') {
+        echo '<li>' . $category->name . '</li>';
+      }
+      ?>
     </ul>
   </nav>
 

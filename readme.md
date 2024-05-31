@@ -8,7 +8,7 @@
 
 # Current task
 
-- [ ] Style category pages
+- [ ] Make categories page responsive
 
 ## To-Do List
 
@@ -34,6 +34,7 @@
 
 ## Completed tasks
 
+- [x] Style category pages
 - [x] Make breadcrumbs dynamic
 - [x] Use AI to generate lots of example articles from different categories
 - [x] Ensure that additional photos can be added to single articles without display problems
