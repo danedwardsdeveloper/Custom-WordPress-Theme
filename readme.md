@@ -34,6 +34,7 @@
 
 ## Completed tasks
 
+- [x] Format article excerpts properly
 - [x] Design a logo: 118 x 42px
 - [x] Make categories page responsive
 - [x] Style category pages
@@ -57,10 +58,9 @@
 
 ### Annoying to-do list
 
-- [ ] Format article excerpts properly
-  - [ ] 100 characters long
-  - [ ] Use custom excerpt if available
-  - [ ] Add ellipsis only if necessary
+- [ ] 100 characters long
+- [ ] Use custom excerpt if available
+- [ ] Add ellipsis only if necessary
 - [ ] Truncate article preview titles
 - [ ] Stop sticky posts from being displayed in addition to maximum posts per page
 
