@@ -1,9 +1,11 @@
 **A personal blog inspired by [TikTok Creator Academy](https://www.tiktok.com/creator-academy), which has a modern and fun style with big flashes of colour. Weirdly, the original site is not responsive - if you view on a mobile, it a massive horizontal scroll bar because the header stays exactly the same.**
 
+![Desktop homepage mockup](./github-mockups/mac-mockup.webp)
+
 ## Technologies
 
-- React
 - WordPress
+- PHP
 - SASS
 
 # Current task
@@ -59,6 +61,7 @@
   - [ ] 100 characters long
   - [ ] Use custom excerpt if available
   - [ ] Add ellipsis only if necessary
+- [ ] Truncate article preview titles
 - [ ] Stop sticky posts from being displayed in addition to maximum posts per page
 
 ### Image sizes
