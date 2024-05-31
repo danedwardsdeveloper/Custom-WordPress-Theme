@@ -56,7 +56,7 @@ a {
     font-size: 3rem;
     span {
       font-size: 3rem;
-      text-shadow: 0.15rem 0.15rem #ff3353fc, -0.15rem -0.15rem cyan;
+      text-shadow: 0.15rem 0.15rem rgba(255, 51, 83, 0.988), -0.15rem -0.15rem cyan;
     }
   }
   .search-container {
@@ -202,6 +202,7 @@ main {
       }
     }
   }
+
   .article-previews-container {
     display: flex;
     margin-top: 24px;
@@ -214,6 +215,9 @@ main {
     a div.article-preview-card {
       box-sizing: border-box;
       width: 344px;
+      @media screen and (max-width: $phone) {
+        width: 100%;
+      }
       cursor: pointer;
       padding: 12px;
       border-radius: 8px;
@@ -221,7 +225,6 @@ main {
       display: flex;
       flex-direction: column;
       img {
-        // width: 100%;
         height: 180px;
         object-fit: cover;
         border-radius: 8px;
@@ -344,6 +347,18 @@ main {
       object-fit: cover;
     }
   }
+  ul,
+  ol {
+    padding: 0 0 0 20px;
+    margin: 10px 0 32px 0;
+    font-size: 1.8rem;
+  }
+  ul li {
+    margin-bottom: 8px;
+  }
+  ol li {
+    margin-bottom: 22px;
+  }
 }
 
 aside.recent-articles {
@@ -409,9 +424,14 @@ nav.breadcrumbs {
       flex-direction: row;
       width: 100%;
       height: 214px;
+      gap: 24px;
+      @media screen and (max-width: $phone) {
+        flex-direction: column;
+        height: auto;
+        gap: 0;
+      }
       display: flex;
       padding: 12px 0;
-      gap: 24px;
       justify-content: flex-start;
       border-bottom: 1px solid rgba(22, 24, 35, 0.2);
       .card-text {
@@ -424,15 +444,22 @@ nav.breadcrumbs {
         }
         p {
           margin: 12px 0 24px 0;
+          @media screen and (max-width: $phone) {
+            margin-bottom: 12px;
+          }
         }
       }
       .image-container {
         img {
-          width: 152px;
           height: 152px;
+          width: 152px;
+          margin-top: 12px;
+          @media screen and (max-width: $phone) {
+            width: 100%;
+            margin-bottom: 24px;
+          }
           display: block;
           object-fit: cover;
-          margin-top: 12px;
           border-radius: 12px;
         }
       }

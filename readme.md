@@ -10,15 +10,13 @@
 
 # Current task
 
-- [ ] Make categories page responsive
+- [ ] Change SASS to LESS
 
 ## To-Do List
 
 - [ ] Make H1 font-size smaller on smaller screens
 - [ ] Fix single article mobile layout
 - [ ] SEO and metadata
-- [ ] Design a logo: 118 x 42px
-- [ ] Change SASS to LESS
 - [ ] Truncate article titles on article previews
 - [ ] Screenshot of homepage
 - [ ] Make GitHub public
@@ -36,6 +34,8 @@
 
 ## Completed tasks
 
+- [x] Design a logo: 118 x 42px
+- [x] Make categories page responsive
 - [x] Style category pages
 - [x] Make breadcrumbs dynamic
 - [x] Use AI to generate lots of example articles from different categories
