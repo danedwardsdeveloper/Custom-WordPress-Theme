@@ -8,12 +8,12 @@
 
 # Current task
 
-- [ ] Make breadcrumbs dynamic
+- [ ] Style category pages
 
 ## To-Do List
 
+- [ ] Make H1 font-size smaller on smaller screens
 - [ ] Fix single article mobile layout
-- [ ] Style category pages
 - [ ] SEO and metadata
 - [ ] Design a logo: 118 x 42px
 - [ ] Change SASS to LESS
@@ -34,6 +34,7 @@
 
 ## Completed tasks
 
+- [x] Make breadcrumbs dynamic
 - [x] Use AI to generate lots of example articles from different categories
 - [x] Ensure that additional photos can be added to single articles without display problems
 - [x] Fix column gap on mobile view

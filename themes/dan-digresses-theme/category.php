@@ -2,45 +2,57 @@
 
 <main>
 
-  <h1 class="archive-title"><?php single_cat_title(); ?></h1>
+  <nav class="breadcrumbs">
+    <ul>
+      <li>
+        <a href="<?php echo home_url(); ?>">
+          Home
+        </a>
+      </li>
+      <li><?php the_category('single=true&echo=false') ?></li>
+    </ul>
+  </nav>
 
+  <div class="categories-page">
 
-  <?php if (have_posts()) : ?>
+    <h1><?php single_cat_title(); ?></h1>
+    <?php the_archive_description('<div class="archive-description">', '</div>'); ?>
 
-    <header class="archive-header">
-      <h1 class="archive-title"><?php single_cat_title(); ?></h1>
-      <?php the_archive_description('<div class="archive-description">', '</div>'); ?>
-    </header>
+    <div class="container">
 
-    <?php while (have_posts()) : the_post(); ?>
+      <?php if (have_posts()) : ?>
+        <?php while (have_posts()) : the_post(); ?>
 
-      <article <?php post_class(); ?>>
+          <a href="<?php the_permalink(); ?>">
+            <article class="card">
 
-        <?php the_post_thumbnail('your-thumbnail-size'); ?>
+              <div class="card-text">
+                <h2><?php the_title(); ?></h2>
+                <?php the_excerpt(); ?>
+              </div>
 
-        <h2 class="entry-title">
-          <a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
-        </h2>
+              <div class="image-container">
+                <?php
+                $featured_image = get_the_post_thumbnail_url($post->ID, 'small');
+                $featured_image_alt = get_post_meta(get_post_thumbnail_id($post->ID), '_wp_attachment_image_alt', true);
+                if ($featured_image) : ?>
+                  <img src="<?php echo esc_url($featured_image); ?>" alt="<?php echo esc_attr($featured_image_alt); ?>">
+                <?php endif; ?>
+              </div>
 
-        <div class="entry-content">
-          <?php the_excerpt(); ?>
-        </div>
+            </article>
+          </a>
 
-        <a href="<?php the_permalink(); ?>" class="read-more" rel="bookmark">Read More</a>
+        <?php endwhile; ?>
 
-      </article>
+      <?php else : ?>
 
-    <?php endwhile; ?>
+        <p><?php _e('There are no posts in this category.', 'your-theme-name'); ?></p>
 
-    <?php the_posts_navigation(); ?>
+      <?php endif; ?>
+    </div>
 
-  <?php else : ?>
-
-    <p><?php _e('There are no posts in this category.', 'your-theme-name'); ?></p>
-
-  <?php endif; ?>
-
+  </div>
 </main>
-
 
 <?php get_footer(); ?>
