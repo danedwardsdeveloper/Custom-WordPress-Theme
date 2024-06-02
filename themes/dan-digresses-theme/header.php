@@ -15,7 +15,8 @@
                     <span>D</span>an <span>D</span>igresses<span>...</span>
                 </a>
             </div>
-            <div class="search-container">
+            <?php get_search_form(); ?>
+            <!-- <div class="search-container">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/icons/google-search-icon.svg" alt="" id="search-icon" />
-            </div>
+            </div> -->
         </header>

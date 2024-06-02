@@ -10,11 +10,13 @@
 
 # Current task
 
-- [ ] Make the single-article page responsive
+- [ ] Search bar
 
 ## To-Do List
 
-- [ ] Install plugins
+- [ ] Fix Jane Eyre article
+- [ ] 404 error page
+- [ ] Link privacy policy and terms of service pages
 - [ ] Generate recent/relevant article dynamically
 - [ ] Truncate article titles on article previews & breadcrumbs
 - [ ] Make H1 font-size smaller on smaller screens
@@ -28,7 +30,9 @@
 - [ ] Make the category/search term page page responsive
 - [ ] Delete unused WordPress stylesheets
 - [ ] Implement pagination
-- [ ] ...many more steps
+- [ ] Enable comments
+  - [ ] Test out comments
+  - [ ] Disable comments because social media is toxic
 
 ## Completed tasks
 
@@ -55,6 +59,8 @@
 - [x] Style single-article page
 - [x] Change SASS to LESS
 - [x] Fix single article mobile layout
+- [x] Install plugins
+- [x] Make the single-article page responsive
 
 ### Annoying to-do list
 
@@ -63,6 +69,7 @@
 - [ ] Add ellipsis only if necessary
 - [ ] Truncate article preview titles
 - [ ] Stop sticky posts from being displayed in addition to maximum posts per page
+- [ ] Make page fill the vertical space even if empty (footer at bottom)
 
 ### Image sizes
 
