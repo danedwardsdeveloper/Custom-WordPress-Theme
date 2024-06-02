@@ -10,17 +10,16 @@
 
 # Current task
 
-- [ ] Generate recent/relevant article dynamically
+- [ ] Make the single-article page responsive
 
 ## To-Do List
 
+- [ ] Install plugins
+- [ ] Generate recent/relevant article dynamically
 - [ ] Truncate article titles on article previews & breadcrumbs
 - [ ] Make H1 font-size smaller on smaller screens
 - [ ] SEO and metadata
-- [ ] Screenshot of homepage
-- [ ] Make GitHub public
 - [ ] Add to CV site
-- [ ] Make the single-article page responsive
 - [ ] Improve modal
   - [ ] Modal positioning
   - [ ] Click behavior

@@ -285,12 +285,12 @@ main {
   }
   .full-article {
     width: 50%;
+    @media screen and (max-width: @tablet) {
+      width: 70%;
+    }
     @media screen and (max-width: @phone) {
       width: 100%;
       order: 1;
-    }
-    @media screen and (max-width: @tablet) {
-      width: 70%;
     }
     .article-header {
       padding-top: 24px;
@@ -334,13 +334,18 @@ main {
     height: min-content;
     width: 30%;
     margin-right: 40px;
-    @media screen and (max-width: @phone) {
-      width: 100%;
-      order: 2;
-    }
     @media screen and (max-width: @tablet) {
       width: 25%;
       margin-right: 0;
+    }
+    @media screen and (max-width: @phone) {
+      width: 100%;
+      order: 2;
+      margin-top: 6rem;
+    }
+    h3 {
+      margin: 0 0 1rem 0;
+      font-size: 1.8rem;
     }
     ul {
       list-style-type: none;
