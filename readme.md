@@ -10,7 +10,7 @@
 
 # Current task
 
-- [ ] Truncate article titles on article previews & breadcrumbs
+- [ ] Link privacy policy and terms of service pages
 
 ## To-Do List
 
@@ -18,22 +18,27 @@
 - [ ] Add scroll snapping to horizontal categories bar
 - [ ] Fix Jane Eyre article
 - [ ] 404 error page
-- [ ] Link privacy policy and terms of service pages
 - [ ] Generate recent/relevant article dynamically
 - [ ] Make H1 font-size smaller on smaller screens
-- [ ] SEO and metadata
-- [ ] Add to CV site
-- [ ] Improve modal
+- [ ] Implement pagination
+
+- [ ] **Enable preview sorting button & modal**
+
   - [ ] Modal positioning
   - [ ] Click behavior
   - [ ] Animation
-- [ ] Hardcode a category/search term page
-- [ ] Make the category/search term page page responsive
-- [ ] Delete unused WordPress stylesheets
-- [ ] Implement pagination
-- [ ] Enable comments
+
+- [ ] **Enable comments**
   - [ ] Test out comments
   - [ ] Disable comments because social media is toxic
+
+## Deployment To-Do List
+
+- [ ] Delete static assets
+- [ ] Delete unused WordPress stylesheets
+- [ ] Deploy
+- [ ] Configure SEO & security plugins
+- [ ] Add link & spiel to CV site
 
 ## Completed tasks
 
@@ -62,6 +67,7 @@
 - [x] Fix single article mobile layout
 - [x] Install plugins
 - [x] Make the single-article page responsive
+- [x] Truncate article titles on article previews & breadcrumbs
 
 ### Annoying to-do list
 
