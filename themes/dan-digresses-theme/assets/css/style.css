@@ -229,8 +229,11 @@ main {
   padding: 0 8px;
   font-size: 18px;
   font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.article-previews-section .article-previews-container .article-preview-content {
+.article-previews-section .article-previews-container .article-preview-excerpt {
   margin-top: 8px;
   padding: 0 8px;
   font-size: 16px;

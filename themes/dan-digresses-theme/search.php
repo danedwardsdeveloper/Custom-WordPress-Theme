@@ -30,7 +30,6 @@
 
         <div class="container">
 
-
             <?php
             $s = get_search_query();
             $args = array(

@@ -10,15 +10,16 @@
 
 # Current task
 
-- [ ] Search bar
+- [ ] Truncate article titles on article previews & breadcrumbs
 
 ## To-Do List
 
+- [ ] Style the search bar
+- [ ] Add scroll snapping to horizontal categories bar
 - [ ] Fix Jane Eyre article
 - [ ] 404 error page
 - [ ] Link privacy policy and terms of service pages
 - [ ] Generate recent/relevant article dynamically
-- [ ] Truncate article titles on article previews & breadcrumbs
 - [ ] Make H1 font-size smaller on smaller screens
 - [ ] SEO and metadata
 - [ ] Add to CV site

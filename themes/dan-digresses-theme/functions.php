@@ -39,7 +39,7 @@ add_action("wp_enqueue_scripts", "dan_digresses_register_scripts");
 
 add_theme_support('post-thumbnails');
 
-function get_excerpt($count = 100)
+function get_excerpt($count = 110)
 {
     $excerpt = "content" ? get_the_excerpt() : get_the_content();
     $excerpt = strip_tags($excerpt);
