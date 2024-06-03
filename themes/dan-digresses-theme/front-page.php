@@ -57,12 +57,12 @@ get_header();
     <section class="article-previews-section">
         <div class="article-preview-header">
             <h2>Recommended</h2>
-            <button id="sort-article-previews-btn">
+            <!-- <button id="sort-article-previews-btn">
                 <div>
                     <span>Most recent</span>
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/icons/google-chevron-right-icon.svg" alt="Expand icon" />
                 </div>
-            </button>
+            </button> -->
             <div id="sort-article-previews-modal" class="hidden">
                 <ul>
                     <li>
