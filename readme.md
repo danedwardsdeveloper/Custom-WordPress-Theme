@@ -10,6 +10,8 @@
 
 # Current task
 
+- [ ] Style pagination
+
 ## To-Do List
 
 - [ ] Style the search bar
@@ -18,17 +20,6 @@
 - [ ] 404 error page
 - [ ] Generate recent/relevant article dynamically
 - [ ] Make H1 font-size smaller on smaller screens
-- [ ] Implement pagination
-
-- [ ] **Enable preview sorting button & modal**
-
-  - [ ] Modal positioning
-  - [ ] Click behavior
-  - [ ] Animation
-
-- [ ] **Enable comments**
-  - [ ] Test out comments
-  - [ ] Disable comments because social media is toxic
 
 ## Deployment To-Do List
 
@@ -67,11 +58,13 @@
 - [x] Make the single-article page responsive
 - [x] Truncate article titles on article previews & breadcrumbs
 - [x] Link privacy policy and terms of service pages
+- [x] Implement pagination
 
 ### Annoying to-do list
 
 - [ ] Stop sticky posts from being displayed in addition to maximum posts per page
 - [ ] Make page fill the vertical space even if empty (footer at bottom)
+- [ ] The homepage should be coming from `index.php`, not `front-page.php`. This is an error and could cause problems later on
 
 ### Image sizes
 

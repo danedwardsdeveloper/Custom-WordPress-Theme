@@ -56,7 +56,7 @@ get_header();
 
     <section class="article-previews-section">
         <div class="article-preview-header">
-            <h2>Recommended</h2>
+            <h2>Recent articles</h2>
             <!-- <button id="sort-article-previews-btn">
                 <div>
                     <span>Most recent</span>
@@ -132,6 +132,15 @@ get_header();
             ?>
         </div>
     </section>
+    <?php
+    the_posts_pagination(array(
+        'mid_size'  => 3,
+        'prev_text' => __('<', 'textdomain'),
+        'next_text' => __('>', 'textdomain'),
+        "show_all" => true,
+        'prev_next' => true
+    ));
+    ?>
 </main>
 
 <?php

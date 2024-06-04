@@ -485,6 +485,29 @@ nav.breadcrumbs ul li a:hover {
 .static-page li {
   font-size: 1.6rem;
 }
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+}
+.pagination .page-numbers {
+  font-size: 16px;
+  font-weight: 500;
+  width: 32px;
+  height: 32px;
+  padding: 8px 13px;
+  margin: 0 8px;
+  border-radius: 50%;
+}
+.pagination .page-numbers:hover {
+  background-color: lightgrey;
+}
+.pagination .current,
+.pagination .current:hover {
+  background-color: #222222;
+  color: white;
+  cursor: not-allowed;
+}
 footer {
   display: flex;
   flex-direction: column;
