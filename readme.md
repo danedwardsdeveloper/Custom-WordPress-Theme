@@ -10,8 +10,6 @@
 
 # Current task
 
-- [ ] Link privacy policy and terms of service pages
-
 ## To-Do List
 
 - [ ] Style the search bar
@@ -68,13 +66,10 @@
 - [x] Install plugins
 - [x] Make the single-article page responsive
 - [x] Truncate article titles on article previews & breadcrumbs
+- [x] Link privacy policy and terms of service pages
 
 ### Annoying to-do list
 
-- [ ] 100 characters long
-- [ ] Use custom excerpt if available
-- [ ] Add ellipsis only if necessary
-- [ ] Truncate article preview titles
 - [ ] Stop sticky posts from being displayed in addition to maximum posts per page
 - [ ] Make page fill the vertical space even if empty (footer at bottom)
 
