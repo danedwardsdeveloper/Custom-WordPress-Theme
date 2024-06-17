@@ -25,12 +25,13 @@
 
             <?php if (have_posts()) : ?>
                 <?php while (have_posts()) : the_post(); ?>
-
                     <a href="<?php the_permalink(); ?>">
                         <article class="card">
 
                             <div class="card-text">
-                                <h2><?php the_title(); ?></h2>
+                                <?php $full_title = get_the_title();
+                                $truncated_title = truncate_text($full_title, 60); ?>
+                                <h2><?php echo truncate_text((get_the_title()), 35); ?></h2>
                                 <?php the_excerpt(); ?>
                             </div>
 
