@@ -2,25 +2,26 @@
 
 <main>
 
-  <nav class="breadcrumbs">
-    <ul>
-      <li>
-        <a href="<?php echo home_url(); ?>">
-          Home
-        </a>
-      </li>
-      <?php
-      $category = get_queried_object();
-
-      if ($category && $category->taxonomy === 'category') {
-        $truncatedText = truncate_text($category->name, 20);
-        echo '<li>' . $truncatedText . '</li>';
-      }
-      ?>
-    </ul>
-  </nav>
-
   <div class="categories-page">
+
+    <nav class="breadcrumbs">
+      <ul>
+        <li>
+          <a href="<?php echo home_url(); ?>">
+            Home
+          </a>
+        </li>
+        <?php
+        $category = get_queried_object();
+
+        if ($category && $category->taxonomy === 'category') {
+          $truncatedText = truncate_text($category->name, 20);
+          echo '<li>' . $truncatedText . '</li>';
+        }
+        ?>
+      </ul>
+    </nav>
+
 
     <h1><?php single_cat_title(); ?></h1>
     <?php the_archive_description('<div class="archive-description">', '</div>'); ?>

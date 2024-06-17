@@ -12,9 +12,9 @@
 
 ## To-Do List
 
--  [ ] Fix Jane Eyre article
 -  [ ] 404 error page
--  [ ] Make tags on single-article page dynamic
+-  [ ] put related article at the bottom
+-  [ ] Add recent articles too
 
 ## Deployment To-Do List
 
@@ -56,6 +56,7 @@
 -  [x] Implement pagination
 -  [x] Style pagination
 -  [x] Style the search bar
+-  [x] Make tags on single-article page dynamic
 
 ### Annoying to-do list
 

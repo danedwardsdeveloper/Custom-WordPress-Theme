@@ -41,9 +41,10 @@ a:active {
   justify-content: space-between;
   padding: 14px 24px;
 }
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 600px) {
   .header {
-    padding: 16px;
+    flex-direction: column;
+    row-gap: 10px;
   }
 }
 .header .brand-logo-container {
@@ -58,6 +59,7 @@ a:active {
 }
 .header .search-form {
   display: flex;
+  box-sizing: border-box;
   height: 48px;
   padding-left: 24px;
   border-radius: 24px;
@@ -65,6 +67,12 @@ a:active {
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.05);
+}
+@media screen and (max-width: 600px) {
+  .header .search-form {
+    padding-left: 24px;
+    justify-content: flex-start;
+  }
 }
 .header .search-form input[type='search'] {
   width: 100px;
@@ -78,6 +86,11 @@ a:active {
 .header .search-form input[type='search']:hover {
   width: 250px;
   outline: none;
+}
+@media screen and (max-width: 600px) {
+  .header .search-form {
+    width: 100%;
+  }
 }
 .header .search-form button {
   display: none;
@@ -108,6 +121,11 @@ main {
   font-size: 5.8rem;
   margin: 0 0 2rem 0;
   cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  .hero-banner h1 {
+    display: none;
+  }
 }
 .hero-banner p {
   font-size: 1.8rem;
@@ -188,34 +206,6 @@ main {
   transform: rotate(90deg);
   filter: invert(38%) sepia(0%) saturate(1064%) hue-rotate(251deg) brightness(101%) contrast(77%);
 }
-.article-previews-section .article-preview-header #sort-article-previews-modal {
-  transition: opacity 0.3s ease-in-out;
-  position: absolute;
-  right: 42px;
-  top: 800px;
-  background-color: white;
-  border: 1px solid #ccc;
-  width: 240px;
-  z-index: 10;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  border-radius: 12px;
-}
-.article-previews-section .article-preview-header #sort-article-previews-modal ul {
-  list-style-type: none;
-  padding: 4px;
-  margin: 0;
-}
-.article-previews-section .article-preview-header #sort-article-previews-modal ul li {
-  padding: 14px;
-  font-size: 1.4rem;
-  border-radius: 8px;
-  display: flex;
-  justify-content: space-between;
-  cursor: pointer;
-}
-.article-previews-section .article-preview-header #sort-article-previews-modal ul li:hover {
-  background-color: var(--background-main);
-}
 .article-previews-section .article-previews-container {
   display: flex;
   margin-top: 24px;
@@ -223,14 +213,21 @@ main {
   flex-wrap: wrap;
   justify-content: flex-start;
 }
+.article-previews-section .article-previews-container a {
+  max-width: 340px;
+}
+@media screen and (max-width: 840px) {
+  .article-previews-section .article-previews-container a {
+    max-width: 45%;
+  }
+}
 @media screen and (max-width: 600px) {
-  .article-previews-section .article-previews-container {
-    justify-content: center;
+  .article-previews-section .article-previews-container a {
+    max-width: 100%;
   }
 }
 .article-previews-section .article-previews-container a div.article-preview-card {
-  box-sizing: border-box;
-  width: 344px;
+  max-width: 344px;
   cursor: pointer;
   padding: 12px;
   border-radius: 8px;
@@ -238,13 +235,8 @@ main {
   display: flex;
   flex-direction: column;
 }
-@media screen and (max-width: 600px) {
-  .article-previews-section .article-previews-container a div.article-preview-card {
-    width: 100%;
-  }
-}
 .article-previews-section .article-previews-container a div.article-preview-card img {
-  height: 180px;
+  width: 100%;
   object-fit: cover;
   border-radius: 8px;
 }
@@ -297,30 +289,20 @@ main {
 .column-layout {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-@media screen and (max-width: 600px) {
-  .column-layout {
-    flex-direction: row;
-  }
-}
-@media screen and (max-width: 840px) {
-  .column-layout {
-    justify-content: space-between;
-  }
+  justify-content: center;
 }
 .column-layout .full-article {
-  width: 50%;
+  width: 70%;
+  max-width: 700px;
 }
 @media screen and (max-width: 840px) {
   .column-layout .full-article {
-    width: 70%;
+    width: 85%;
   }
 }
 @media screen and (max-width: 600px) {
   .column-layout .full-article {
     width: 100%;
-    order: 1;
   }
 }
 .column-layout .full-article .article-header {
@@ -361,43 +343,47 @@ main {
   object-fit: cover;
   display: block;
 }
-.column-layout aside.recent-articles {
-  text-align: right;
+.column-layout section.recent-articles,
+.column-layout section.related-articles {
   top: 0;
   height: min-content;
-  width: 25%;
-  margin-top: 100px;
-  padding-left: 40px;
+  width: 70%;
+  max-width: 700px;
+  margin-top: 50px;
 }
 @media screen and (max-width: 840px) {
-  .column-layout aside.recent-articles {
-    width: 25%;
-    padding-left: 0;
+  .column-layout section.recent-articles,
+  .column-layout section.related-articles {
+    width: 85%;
   }
 }
 @media screen and (max-width: 600px) {
-  .column-layout aside.recent-articles {
+  .column-layout section.recent-articles,
+  .column-layout section.related-articles {
     width: 100%;
-    order: 2;
-    margin-top: 6rem;
-    text-align: left;
   }
 }
-.column-layout aside.recent-articles h3 {
+.column-layout section.recent-articles h3,
+.column-layout section.related-articles h3 {
   margin: 0;
   font-size: 1.8rem;
   color: var(--dark-2);
 }
-.column-layout aside.recent-articles ul {
+.column-layout section.recent-articles ul,
+.column-layout section.related-articles ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-.column-layout aside.recent-articles ul li {
+.column-layout section.recent-articles ul li,
+.column-layout section.related-articles ul li {
   font-size: 18px;
   font-weight: 500;
   padding: 10px 0;
   color: var(--dark-3);
+}
+.column-layout section.related-articles {
+  margin-top: 100px;
 }
 nav.breadcrumbs ul {
   list-style-type: none;
@@ -422,6 +408,10 @@ nav.breadcrumbs ul li a {
 nav.breadcrumbs ul li a:hover {
   color: var(--dark-3);
 }
+.categories-page {
+  max-width: 700px;
+  margin: 0 auto;
+}
 .categories-page h1 {
   font-size: 32px;
   font-weight: 700;
@@ -441,7 +431,7 @@ nav.breadcrumbs ul li a:hover {
 .categories-page .container .card {
   flex-direction: row;
   width: 100%;
-  height: 214px;
+  height: auto;
   gap: 24px;
   display: flex;
   padding: 12px 0;
@@ -533,9 +523,9 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  text-align: center;
   margin-top: 64px;
-  height: 111px;
+  height: 150px;
   gap: 8px;
   background-color: black;
   color: white;
@@ -544,6 +534,10 @@ footer {
 }
 footer ul {
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 0.4rem;
+  justify-content: center;
 }
 footer ul li {
   display: inline-block;
