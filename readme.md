@@ -12,10 +12,6 @@
 
 ## To-Do List
 
--  [ ] 404 error page
--  [ ] put related article at the bottom
--  [ ] Add recent articles too
-
 ## Deployment To-Do List
 
 -  [ ] Delete static assets
@@ -57,6 +53,9 @@
 -  [x] Style pagination
 -  [x] Style the search bar
 -  [x] Make tags on single-article page dynamic
+-  [x] 404 error page
+-  [x] put related article at the bottom
+-  [x] Add recent articles too
 
 ### Annoying to-do list
 

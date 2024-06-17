@@ -6,8 +6,6 @@
         </li>
         <li>•</li>
         <li><a href="/privacy-policy">Privacy policy</a></li>
-        <li>•</li>
-        <li><a href="https://danedwardsdeveloper.com/">Site by Dan Edwards</a></li>
     </ul>
 </footer>
 </div>
