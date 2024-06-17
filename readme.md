@@ -10,8 +10,6 @@
 
 # Current task
 
-- [ ] Style pagination
-
 ## To-Do List
 
 - [ ] Style the search bar
@@ -59,6 +57,7 @@
 - [x] Truncate article titles on article previews & breadcrumbs
 - [x] Link privacy policy and terms of service pages
 - [x] Implement pagination
+- [x] Style pagination
 
 ### Annoying to-do list
 
