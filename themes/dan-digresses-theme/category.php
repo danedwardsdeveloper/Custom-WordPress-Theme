@@ -13,7 +13,8 @@
       $category = get_queried_object();
 
       if ($category && $category->taxonomy === 'category') {
-        echo '<li>' . $category->name . '</li>';
+        $truncatedText = truncate_text($category->name, 20);
+        echo '<li>' . $truncatedText . '</li>';
       }
       ?>
     </ul>

@@ -282,17 +282,22 @@ main {
   border-radius: 4px;
   align-items: center;
   color: black;
+  outline: 1px solid inherit;
+}
+.tag:hover {
+  outline: 1px solid #ccc;
 }
 .tag:not(:last-child) {
   margin-right: 10px;
 }
-.tag span {
+.tag a {
   font-size: 1.4rem;
   font-weight: 500;
 }
 .column-layout {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 @media screen and (max-width: 600px) {
   .column-layout {
@@ -344,7 +349,7 @@ main {
   color: var(--dark-3);
 }
 .column-layout .full-article .article-header div.tags-container {
-  padding-top: 12px;
+  padding-top: 24px;
 }
 .column-layout .full-article .article-header div.image-container {
   margin: 36px 0 12px 0;
@@ -357,15 +362,17 @@ main {
   display: block;
 }
 .column-layout aside.recent-articles {
+  text-align: right;
   top: 0;
   height: min-content;
-  width: 30%;
-  margin-right: 40px;
+  width: 25%;
+  margin-top: 100px;
+  padding-left: 40px;
 }
 @media screen and (max-width: 840px) {
   .column-layout aside.recent-articles {
     width: 25%;
-    margin-right: 0;
+    padding-left: 0;
   }
 }
 @media screen and (max-width: 600px) {
@@ -373,11 +380,13 @@ main {
     width: 100%;
     order: 2;
     margin-top: 6rem;
+    text-align: left;
   }
 }
 .column-layout aside.recent-articles h3 {
-  margin: 0 0 1rem 0;
+  margin: 0;
   font-size: 1.8rem;
+  color: var(--dark-2);
 }
 .column-layout aside.recent-articles ul {
   list-style-type: none;

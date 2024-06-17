@@ -3,7 +3,6 @@
 <main>
     <div class="column-layout">
 
-        <?php get_sidebar(); ?>
 
         <article class="full-article">
             <nav class="breadcrumbs">
@@ -13,8 +12,17 @@
                             Home
                         </a>
                     </li>
-                    <li><?php the_category('single=true&echo=false') ?></li>
-                    <li><?php the_title() ?></li>
+                    <li>
+                        <?php
+                        $categories = get_the_category();
+                        if (!empty($categories)) {
+                            $category_name = truncate_text($categories[0]->name, 50); // Truncate category name
+                            echo '<a href="' . esc_url(get_category_link($categories[0]->term_id)) . '">' . esc_html($category_name) . '</a>';
+                        }
+                        ?>
+                    </li>
+                    <li><?php echo truncate_text(get_the_title(), 15); // Truncate article title 
+                        ?></li>
                 </ul>
             </nav>
             <section class="article-header">
@@ -31,15 +39,17 @@
                             <span><?php echo get_the_date('l j F Y') ?></span>
                         </div>
                         <div class="tags-container">
-                            <div class="tag">
-                                <span>Tag</span>
-                            </div>
-                            <div class="tag">
-                                <span>Another tag</span>
-                            </div>
-                            <div class="tag">
-                                <span>Different tag</span>
-                            </div>
+                            <?php
+                            $tags = get_the_tags();
+                            if ($tags) {
+                                foreach ($tags as $tag) {
+                                    $tag_link = get_tag_link($tag->term_id);
+                                    echo '<div class="tag"><a href="' . esc_url($tag_link) . '">' . esc_html($tag->name) . '</a></div>';
+                                }
+                            } else {
+                                echo '<div class="tag"><span>No tags</span></div>'; // Optional: message when no tags are found
+                            }
+                            ?>
                         </div>
                         <div class="image-container">
                             <?php
@@ -61,10 +71,12 @@
                     echo '<p>No content found.</p>';
                 endif;
 
-                // Reset the Post Data
                 wp_reset_postdata();
     ?>
-    </section>
+        </article>
+
+        <?php get_sidebar(); ?>
+
     </div>
 </main>
 

@@ -294,10 +294,14 @@ main {
 	border-radius: 4px;
 	align-items: center;
 	color: black;
+	outline: 1px solid inherit;
+	&:hover {
+		outline: 1px solid #ccc;
+	}
 	&:not(:last-child) {
 		margin-right: 10px;
 	}
-	span {
+	a {
 		font-size: 1.4rem;
 		font-weight: 500;
 	}
@@ -306,6 +310,8 @@ main {
 .column-layout {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-evenly;
+
 	@media screen and (max-width: @phone) {
 		flex-direction: row;
 	}
@@ -344,7 +350,7 @@ main {
 				}
 			}
 			div.tags-container {
-				padding-top: 12px;
+				padding-top: 24px;
 			}
 			div.image-container {
 				margin: 36px 0 12px 0;
@@ -359,22 +365,26 @@ main {
 		}
 	}
 	aside.recent-articles {
+		text-align: right;
 		top: 0;
 		height: min-content;
-		width: 30%;
-		margin-right: 40px;
+		width: 25%;
+		margin-top: 100px;
+		padding-left: 40px;
 		@media screen and (max-width: @tablet) {
 			width: 25%;
-			margin-right: 0;
+			padding-left: 0;
 		}
 		@media screen and (max-width: @phone) {
 			width: 100%;
 			order: 2;
 			margin-top: 6rem;
+			text-align: left;
 		}
 		h3 {
-			margin: 0 0 1rem 0;
+			margin: 0;
 			font-size: 1.8rem;
+			color: var(--dark-2);
 		}
 		ul {
 			list-style-type: none;

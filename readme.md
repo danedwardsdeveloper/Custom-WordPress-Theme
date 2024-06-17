@@ -12,12 +12,9 @@
 
 ## To-Do List
 
--  [ ] Style the search bar
--  [ ] Add scroll snapping to horizontal categories bar
 -  [ ] Fix Jane Eyre article
 -  [ ] 404 error page
--  [ ] Generate recent/relevant article dynamically
--  [ ] Make H1 font-size smaller on smaller screens
+-  [ ] Make tags on single-article page dynamic
 
 ## Deployment To-Do List
 
@@ -58,6 +55,7 @@
 -  [x] Link privacy policy and terms of service pages
 -  [x] Implement pagination
 -  [x] Style pagination
+-  [x] Style the search bar
 
 ### Annoying to-do list
 

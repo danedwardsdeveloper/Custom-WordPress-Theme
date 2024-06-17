@@ -42,6 +42,15 @@ function get_excerpt($count = 110)
     return $excerpt;
 }
 
+function truncate_text($text, $max_length = 50)
+{
+    if (strlen($text) > $max_length) {
+        return substr($text, 0, $max_length) . '...';
+    } else {
+        return $text;
+    }
+}
+
 add_filter('pre_site_transient_update_core', '__return_null');
 add_filter('pre_site_transient_update_themes', '__return_null');
 add_filter('pre_site_transient_update_plugins', '__return_null');
