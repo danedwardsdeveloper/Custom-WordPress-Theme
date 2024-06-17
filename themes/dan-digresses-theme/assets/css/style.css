@@ -286,6 +286,9 @@ main {
   font-size: 1.4rem;
   font-weight: 500;
 }
+.article-preview-card .tag:hover {
+  outline-color: transparent;
+}
 .column-layout {
   display: flex;
   flex-wrap: wrap;
