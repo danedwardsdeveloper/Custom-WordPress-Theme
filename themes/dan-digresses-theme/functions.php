@@ -30,13 +30,6 @@ function dan_digresses_register_styles()
 }
 add_action("wp_enqueue_scripts", "dan_digresses_register_styles");
 
-// function dan_digresses_register_scripts()
-// {
-//     $version = wp_get_theme()->get('Version');
-//     wp_enqueue_script("danDigressesMainJS", get_template_directory_uri() . '/assets/js/main.js', array(), $version, true);
-// }
-// add_action("wp_enqueue_scripts", "dan_digresses_register_scripts");
-
 add_theme_support('post-thumbnails');
 
 function get_excerpt($count = 110)

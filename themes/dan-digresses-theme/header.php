@@ -15,16 +15,5 @@
                     <span>D</span>an <span>D</span>igresses<span>...</span>
                 </a>
             </div>
-            <!-- <?php get_search_form(); ?> -->
-
-            <div class="search-container">
-                <button id="show-search-modal-btn">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/icons/google-search-icon.svg" alt="" id="search-icon" />
-                </button>
-            </div>
-
-            <!-- <div id="search-modal" class="hidden">
-                <p>This is the search modal</p>
-            </div> -->
-
+            <?php get_search_form(); ?>
         </header>
