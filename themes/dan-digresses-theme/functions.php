@@ -54,3 +54,27 @@ function truncate_text($text, $max_length = 50)
 add_filter('pre_site_transient_update_core', '__return_null');
 add_filter('pre_site_transient_update_themes', '__return_null');
 add_filter('pre_site_transient_update_plugins', '__return_null');
+
+function custom_author_base()
+{
+    global $wp_rewrite;
+    $wp_rewrite->author_base = 'writer';
+    $wp_rewrite->flush_rules();
+}
+add_action('init', 'custom_author_base');
+
+function custom_rewrite_rules($rules)
+{
+    $new_rules = array();
+    $new_rules['writer/([^/]+)/?$'] = 'index.php?author_name=$matches[1]';
+    return $new_rules + $rules;
+}
+add_filter('rewrite_rules_array', 'custom_rewrite_rules');
+
+function custom_author_query($query)
+{
+    if ($query->is_author) {
+        $query->set('author_name', get_query_var('author_name'));
+    }
+}
+add_action('pre_get_posts', 'custom_author_query');

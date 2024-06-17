@@ -35,7 +35,7 @@
                         <h1><?php echo $title; ?></h1>
 
                         <div class="writer-date">
-                            <span>by <?php the_author(); ?></span>
+                            <span>by <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>"><?php the_author(); ?></a></span>
                             <span><?php echo get_the_date('l j F Y') ?></span>
                         </div>
                         <div class="tags-container">

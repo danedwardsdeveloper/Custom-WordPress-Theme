@@ -12,13 +12,15 @@
 
 ## To-Do List
 
+-  [ ] Make writer into a link to writer page
+
 ## Deployment To-Do List
 
--  [ ] Delete static assets
--  [ ] Delete unused WordPress stylesheets
 -  [ ] Deploy
+-  [ ] Add Simple Analytics plugin
 -  [ ] Configure SEO & security plugins
 -  [ ] Add link & spiel to CV site
+-  [ ] Replace articles
 
 ## Completed tasks
 

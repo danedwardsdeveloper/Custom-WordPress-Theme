@@ -325,7 +325,8 @@ main {
   display: flex;
   justify-content: space-between;
 }
-.column-layout .full-article .article-header div.writer-date span {
+.column-layout .full-article .article-header div.writer-date span,
+.column-layout .full-article .article-header div.writer-date a {
   padding-top: 24px;
   font-size: 2rem;
   color: var(--dark-3);
