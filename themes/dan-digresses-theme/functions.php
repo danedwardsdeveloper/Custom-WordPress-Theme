@@ -9,6 +9,7 @@ function dan_digresses_theme_support()
         'flex-width'  => true,
         'flex-height' => true,
     ));
+    add_theme_support('post-thumbnails');
 }
 
 add_action('after_setup_theme', 'dan_digresses_theme_support');
@@ -30,7 +31,10 @@ function dan_digresses_register_styles()
 }
 add_action("wp_enqueue_scripts", "dan_digresses_register_styles");
 
-add_theme_support('post-thumbnails');
+function theme_featured_image_setup()
+{
+    add_theme_support('post-thumbnails');
+}
 
 function get_excerpt($count = 110)
 {
@@ -78,3 +82,5 @@ function custom_author_query($query)
     }
 }
 add_action('pre_get_posts', 'custom_author_query');
+
+add_filter('admin_email_check_interval', '__return_false');
