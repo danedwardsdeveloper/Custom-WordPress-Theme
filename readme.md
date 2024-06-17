@@ -12,7 +12,8 @@
 
 ## To-Do List
 
--  [ ] Make writer into a link to writer page
+-  [ ] Truncate text on tag results page
+-  [ ] Tags page breadcrumbs
 
 ## Deployment To-Do List
 
@@ -58,6 +59,7 @@
 -  [x] 404 error page
 -  [x] put related article at the bottom
 -  [x] Add recent articles too
+-  [x] Make writer into a link to writer page
 
 ### Annoying to-do list
 

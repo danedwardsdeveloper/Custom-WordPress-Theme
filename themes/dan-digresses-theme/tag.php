@@ -9,14 +9,16 @@
                     Home
                 </a>
             </li>
-            <?php
-            $category = get_queried_object();
-
-            if ($category && $category->taxonomy === 'category') {
-                $truncatedText = truncate_text($category->name, 20);
-                echo '<li>' . $truncatedText . '</li>';
-            }
-            ?>
+            <li>Tag</li>
+            <li>
+                <?php
+                $current_tag = get_queried_object();
+                if ($current_tag && $current_tag->taxonomy === 'post_tag') {
+                    $truncatedText = truncate_text($current_tag->name, 20);
+                    echo $truncatedText;
+                }
+                ?>
+            </li>
         </ul>
     </nav>
 
@@ -34,7 +36,7 @@
                         <article class="card">
 
                             <div class="card-text">
-                                <h2><?php the_title(); ?></h2>
+                                <h2><?php echo truncate_text(get_the_title(), 35); ?></h2>
                                 <?php the_excerpt(); ?>
                             </div>
 
