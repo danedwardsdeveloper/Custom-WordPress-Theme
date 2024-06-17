@@ -12,9 +12,6 @@
 
 ## To-Do List
 
--  [ ] Truncate text on tag results page
--  [ ] Tags page breadcrumbs
-
 ## Deployment To-Do List
 
 -  [ ] Deploy
@@ -60,6 +57,8 @@
 -  [x] put related article at the bottom
 -  [x] Add recent articles too
 -  [x] Make writer into a link to writer page
+-  [x] Truncate text on tag results page
+-  [x] Tags page breadcrumbs
 
 ### Annoying to-do list
 

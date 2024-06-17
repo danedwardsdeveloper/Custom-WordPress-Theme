@@ -73,6 +73,8 @@
 
                 wp_reset_postdata();
     ?>
+    <hr />
+
         </article>
 
         <?php get_sidebar(); ?>

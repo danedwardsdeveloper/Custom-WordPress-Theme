@@ -72,6 +72,8 @@ a:active {
   .header .search-form {
     padding-left: 24px;
     justify-content: flex-start;
+    width: 100%;
+    flex-grow: 1;
   }
 }
 .header .search-form input[type='search'] {
@@ -88,7 +90,11 @@ a:active {
   outline: none;
 }
 @media screen and (max-width: 600px) {
-  .header .search-form {
+  .header .search-form input[type='search'] {
+    width: 100%;
+  }
+  .header .search-form input[type='search']:focus,
+  .header .search-form input[type='search']:hover {
     width: 100%;
   }
 }
@@ -262,22 +268,32 @@ main {
   padding: 0 8px 6px 8px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.article-previews-section .article-previews-container .article-preview-card-footer .tag {
+  height: min-content;
+}
+.article-previews-section .article-previews-container .article-preview-card-footer .tag:hover {
+  border-color: transparent;
 }
 .article-previews-section .article-previews-container .article-preview-card-footer .article-preview-date {
   color: var(--dark-3);
   font-size: 1.4rem;
+  max-width: 60%;
+  text-align: right;
 }
 .tag {
   display: inline-block;
+  font-size: 1.4rem;
   padding: 2px 6px;
   background-color: var(--background-darker);
   border-radius: 4px;
   align-items: center;
-  color: black;
-  outline: 1px solid inherit;
+  color: var(--dark-2);
+  border: 1px solid transparent;
 }
 .tag:hover {
-  outline: 1px solid #ccc;
+  border: 1px solid #ccc;
 }
 .tag:not(:last-child) {
   margin-right: 10px;
@@ -285,9 +301,6 @@ main {
 .tag a {
   font-size: 1.4rem;
   font-weight: 500;
-}
-.article-preview-card .tag:hover {
-  outline-color: transparent;
 }
 .column-layout {
   display: flex;
@@ -346,6 +359,13 @@ main {
   border-radius: 12px;
   object-fit: cover;
   display: block;
+}
+.column-layout .full-article hr {
+  background-color: #aaa;
+  border-width: 1px;
+  margin-top: 12rem;
+  border: none;
+  height: 1px;
 }
 .column-layout section.recent-articles,
 .column-layout section.related-articles {
