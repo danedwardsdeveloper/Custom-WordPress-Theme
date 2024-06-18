@@ -17,6 +17,12 @@
 -  [ ] Deploy
 -  [ ] Add Simple Analytics plugin
 -  [ ] Configure SEO & security plugins
+- [ ] Minify JS & CSS
+- [ ] Cache plugin
+
+
+
+
 -  [ ] Add link & spiel to CV site
 -  [ ] Replace articles
 
