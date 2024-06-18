@@ -15,7 +15,7 @@ get_header();
                         echo get_category_link('16');
                         ?>">
                 <div class="category-card">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/category-graphics/books.webp" alt="A colourful bookshelf" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/category-graphics/books.webp" height="120" width="196" alt="A colourful bookshelf" />
                     <span>Book reviews</span>
                 </div>
             </a>
@@ -23,7 +23,7 @@ get_header();
                         echo get_category_link('15');
                         ?>">
                 <div class="category-card">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/category-graphics/philosophy.webp" alt="A wise owl, often used to represent knowledge and philosophy" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/category-graphics/philosophy.webp" height="120" width="196" alt="A wise owl, often used to represent knowledge and philosophy" />
                     <span>Philosophy</span>
                 </div>
             </a>
@@ -31,7 +31,7 @@ get_header();
                         echo get_category_link('13');
                         ?>">
                 <div class="category-card">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/category-graphics/recipes.webp" alt="Two people cooking in a kitchen" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/category-graphics/recipes.webp" height="120" width="196" alt="Two people cooking in a kitchen" />
                     <span>Recipes</span>
                     </>
                 </div>
@@ -39,7 +39,7 @@ get_header();
                             echo get_category_link('17');
                             ?>">
                     <div class="category-card">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/category-graphics/music.webp" alt="A music producer using a digital audio workstation" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/category-graphics/music.webp" height="120" width="196" alt="A music producer using a digital audio workstation" />
                         <span>Music</span>
                     </div>
                 </a>
@@ -47,7 +47,7 @@ get_header();
                             echo get_category_link('14');
                             ?>">
                     <div class="category-card">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/category-graphics/life-hacks.webp" alt="A collection of DIY materials and tools" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/category-graphics/life-hacks.webp" height="120" width="196" alt="A collection of DIY materials and tools" />
                         <span>Life hacks</span>
                     </div>
                 </a>
