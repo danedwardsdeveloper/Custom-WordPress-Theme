@@ -82,12 +82,15 @@ get_header();
                         <div class="article-preview-card">
 
                             <?php
+                            $featured_image_id = get_post_thumbnail_id($post->ID);
                             $featured_image = get_the_post_thumbnail_url($post->ID, 'small');
                             $featured_image_alt = get_post_meta(get_post_thumbnail_id($post->ID), '_wp_attachment_image_alt', true);
 
-                            if ($featured_image) : ?>
+                            if ($featured_image) :
+                                list($image_url, $image_width, $image_height) = $featured_image;
+                            ?>
 
-                                <img src="<?php echo esc_url($featured_image); ?>" alt="<?php echo esc_attr($featured_image_alt); ?>">
+                                <img src="<?php echo esc_url($featured_image); ?>" alt="<?php echo esc_attr($featured_image_alt); ?>" width="316" height="211">
 
                             <?php endif; ?>
 

@@ -17,11 +17,8 @@
 -  [ ] Deploy
 -  [ ] Add Simple Analytics plugin
 -  [ ] Configure SEO & security plugins
-- [ ] Minify JS & CSS
-- [ ] Cache plugin
-
-
-
+-  [ ] Minify JS & CSS
+-  [ ] Cache plugin
 
 -  [ ] Add link & spiel to CV site
 -  [ ] Replace articles
@@ -76,3 +73,5 @@
 
 -  Thumbnail **320x180**
 -  Medium **540 × 360**
+
+Category images - **196 x 120**
