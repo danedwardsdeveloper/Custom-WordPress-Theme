@@ -147,11 +147,13 @@ main {
   display: flex;
   flex-direction: row;
   gap: 24px;
-  overflow-x: scroll;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
 }
 .categories .category-cards-container .category-card {
   display: flex;
   flex-direction: column;
+  scroll-snap-align: start;
   width: 196px;
   height: 240px;
   background-color: #ffffff;

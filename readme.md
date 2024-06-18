@@ -6,11 +6,7 @@
 
 -  WordPress
 -  PHP
--  SASS
-
-# Current task
-
-## To-Do List
+-  LESS
 
 ## Deployment To-Do List
 

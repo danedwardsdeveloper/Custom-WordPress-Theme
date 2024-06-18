@@ -35,22 +35,23 @@ get_header();
                     <span>Recipes</span>
                     </>
                 </div>
-                <a href="<?php
-                            echo get_category_link('17');
-                            ?>">
-                    <div class="category-card">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/category-graphics/music.webp" height="120" width="196" alt="A music producer using a digital audio workstation" />
-                        <span>Music</span>
-                    </div>
-                </a>
-                <a href="<?php
-                            echo get_category_link('14');
-                            ?>">
-                    <div class="category-card">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/category-graphics/life-hacks.webp" height="120" width="196" alt="A collection of DIY materials and tools" />
-                        <span>Life hacks</span>
-                    </div>
-                </a>
+            </a>
+            <a href="<?php
+                        echo get_category_link('17');
+                        ?>">
+                <div class="category-card">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/category-graphics/music.webp" height="120" width="196" alt="A music producer using a digital audio workstation" />
+                    <span>Music</span>
+                </div>
+            </a>
+            <a href="<?php
+                        echo get_category_link('14');
+                        ?>">
+                <div class="category-card">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images-icons/images/category-graphics/life-hacks.webp" height="120" width="196" alt="A collection of DIY materials and tools" />
+                    <span>Life hacks</span>
+                </div>
+            </a>
         </div>
     </section>
 
