@@ -83,7 +83,7 @@ get_header();
 
                             <?php
                             $featured_image_id = get_post_thumbnail_id($post->ID);
-                            $featured_image = get_the_post_thumbnail_url($post->ID, 'small');
+                            $featured_image = get_the_post_thumbnail_url($post->ID, 'thumbnail-medium');
                             $featured_image_alt = get_post_meta(get_post_thumbnail_id($post->ID), '_wp_attachment_image_alt', true);
 
                             if ($featured_image) :

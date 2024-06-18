@@ -14,6 +14,16 @@ function dan_digresses_theme_support()
 
 add_action('after_setup_theme', 'dan_digresses_theme_support');
 
+function my_custom_image_sizes()
+{
+    add_image_size('thumbnail-square', 152, 152, true);
+    add_image_size('thumbnail-category', 196, 120, true);
+    add_image_size('thumbnail-medium', 350, 234, true);
+    add_image_size('featured-image-full', 535, 190, true);
+}
+add_action('after_setup_theme', 'my_custom_image_sizes');
+
+
 function dan_digresses_menus()
 {
     $locations = array(

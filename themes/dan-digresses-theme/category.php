@@ -41,7 +41,7 @@
 
               <div class="image-container">
                 <?php
-                $featured_image = get_the_post_thumbnail_url($post->ID, 'small');
+                $featured_image = get_the_post_thumbnail_url($post->ID, 'thumbnail-square');
                 $featured_image_alt = get_post_meta(get_post_thumbnail_id($post->ID), '_wp_attachment_image_alt', true);
                 if ($featured_image) : ?>
                   <img src="<?php echo esc_url($featured_image); ?>" alt="<?php echo esc_attr($featured_image_alt); ?>" width="152" height="152">
