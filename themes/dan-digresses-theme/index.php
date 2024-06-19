@@ -1,2 +1,11 @@
-// Don't delete this file even if it is empty or a ton of stuff will break!
-// index.php is a required file for WordPress themes
+<?php get_header(); ?>
+
+<main>
+    <div class="column-layout">
+
+        <?php get_sidebar(); ?>
+
+    </div>
+</main>
+
+<?php get_footer(); ?>

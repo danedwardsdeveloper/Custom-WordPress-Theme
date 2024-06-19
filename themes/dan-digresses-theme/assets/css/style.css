@@ -342,6 +342,7 @@ main {
 .column-layout .full-article .article-header div.writer-date {
   display: flex;
   justify-content: space-between;
+  column-gap: 10px;
 }
 .column-layout .full-article .article-header div.writer-date span,
 .column-layout .full-article .article-header div.writer-date a {
@@ -521,6 +522,9 @@ nav.breadcrumbs ul li a:hover {
 .static-page p,
 .static-page li {
   font-size: 1.6rem;
+}
+.static-page img {
+  border-radius: 12px;
 }
 .pagination {
   display: flex;
