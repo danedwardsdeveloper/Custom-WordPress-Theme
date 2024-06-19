@@ -1,5 +1,7 @@
 **A personal blog inspired by [TikTok Creator Academy](https://www.tiktok.com/creator-academy), which has a modern and fun style with big flashes of colour. Weirdly, the original site is not responsive - if you view on a mobile, it has a massive horizontal scroll bar because the header stays exactly the same.**
 
+### [Live site](https://dandigresses.co.uk/)
+
 ![Desktop homepage mockup](./github-mockups/mac-mockup.webp)
 
 ## Technologies
@@ -7,17 +9,6 @@
 -  WordPress
 -  PHP
 -  LESS
-
-## Deployment To-Do List
-
--  [ ] Deploy
--  [ ] Add Simple Analytics plugin
--  [ ] Configure SEO & security plugins
--  [ ] Minify JS & CSS
--  [ ] Cache plugin
-
--  [ ] Add link & spiel to CV site
--  [ ] Replace articles
 
 ## Completed tasks
 
@@ -58,12 +49,6 @@
 -  [x] Make writer into a link to writer page
 -  [x] Truncate text on tag results page
 -  [x] Tags page breadcrumbs
-
-### Annoying to-do list
-
--  [ ] Stop sticky posts from being displayed in addition to maximum posts per page
--  [ ] Make page fill the vertical space even if empty (footer at bottom)
--  [ ] The homepage should be coming from `index.php`, not `front-page.php`. This is an error and could cause problems later on
 
 ### Image sizes
 
